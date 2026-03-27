@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimplyBook.me Landing Pages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #06ADEF;
+      --color-primary-dark: #0B3052;
+      --color-text-primary: #0B3052;
+      --color-text-secondary: #788291;
+      --color-bg-white: #FFFFFF;
+      --color-bg-light: #F6F9FD;
+      --color-bg-blue: #F1F6FF;
+      --color-border: #E7ECF7;
+      --font-heading: 'Mulish', sans-serif;
+      --font-body: 'Noto Sans', sans-serif;
+      --shadow-card: 2px 4px 15px 3px rgba(45, 53, 71, 0.10);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-primary);
+      background: var(--color-bg-light);
+      min-height: 100vh;
+    }
+
+    .header {
+      background: var(--color-primary-dark);
+      padding: 48px 20px 56px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-family: var(--font-heading);
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+
+    .header p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .pages-grid {
+      display: grid;
+      gap: 20px;
+      padding: 40px 0 60px;
+    }
+
+    .page-card {
+      background: var(--color-bg-white);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      transition: box-shadow 0.2s ease, transform 0.15s ease;
+    }
+
+    .page-card:hover {
+      box-shadow: var(--shadow-card);
+      transform: translateY(-2px);
+    }
+
+    .page-info { flex: 1; }
+
+    .page-tag {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 10px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+    }
+
+    .tag-comparison {
+      background: var(--color-bg-blue);
+      color: var(--color-primary);
+    }
+
+    .tag-feature {
+      background: #E6FBF3;
+      color: #00D38B;
+    }
+
+    .tag-integration {
+      background: #FFF8EA;
+      color: #D4A017;
+    }
+
+    .tag-industry {
+      background: #FDEAEE;
+      color: #FF3259;
+    }
+
+    .tag-draft {
+      background: var(--color-bg-light);
+      color: var(--color-text-secondary);
+    }
+
+    .page-card h2 {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 4px;
+    }
+
+    .page-card p {
+      font-size: 14px;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    .page-arrow {
+      color: var(--color-primary);
+      font-size: 20px;
+      flex-shrink: 0;
+      transition: transform 0.15s ease;
+    }
+
+    .page-card:hover .page-arrow {
+      transform: translateX(4px);
+    }
+
+    .page-card.draft {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .page-card.draft .page-arrow { display: none; }
+
+    .section-label {
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--color-text-secondary);
+      padding-top: 40px;
+      padding-bottom: 12px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px 20px 32px;
+      font-size: 13px;
+      color: var(--color-text-secondary);
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 28px; }
+      .page-card { padding: 20px 24px; }
+      .page-card h2 { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>SimplyBook.me Landing Pages</h1>
+    <p>Internal index of all landing pages — designed HTML and content drafts</p>
+  </div>
+
+  <div class="container">
+    <div class="section-label">Designed Pages (HTML)</div>
+    <div class="pages-grid">
+
+      <a href="pages/simplybook-me-vs-acuity-scheduling.html" class="page-card">
+        <div class="page-info">
+          <span class="page-tag tag-comparison">Comparison</span>
+          <h2>SimplyBook.me vs Acuity Scheduling</h2>
+          <p>Full comparison page — pricing, features, HIPAA, payment gateways</p>
+        </div>
+        <span class="page-arrow">&rarr;</span>
+      </a>
+
+    </div>
+
+    <div class="section-label">Content Drafts (Markdown only — not yet designed)</div>
+    <div class="pages-grid">
+
+      <div class="page-card draft">
+        <div class="page-info">
+          <span class="page-tag tag-draft">Draft</span>
+          <h2>SimplyBook.me vs Setmore</h2>
+          <p>Content written — pending HTML design</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 SimplyBook.me — Landing pages index
+  </div>
+
+</body>
+</html>
