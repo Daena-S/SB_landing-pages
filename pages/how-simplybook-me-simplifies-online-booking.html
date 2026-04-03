@@ -724,7 +724,7 @@
 
     .testimonials-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
     }
 
@@ -733,11 +733,19 @@
       border-radius: var(--radius-card);
       padding: 32px;
       box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
     }
 
     .testimonial-stars {
       color: var(--color-warning);
-      margin-bottom: 16px;
       font-size: 16px;
     }
 
@@ -745,13 +753,35 @@
       margin-right: 2px;
     }
 
+    .testimonial-source {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--color-text-muted);
+      font-weight: 600;
+    }
+
+    .testimonial-source i {
+      color: #00b67a;
+      font-size: 16px;
+    }
+
+    .testimonial-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--color-text-primary);
+      margin-bottom: 12px;
+    }
+
     .testimonial-text {
       margin-bottom: 20px;
+      flex: 1;
     }
 
     .testimonial-text p {
       color: var(--color-text-primary);
-      font-style: italic;
       font-size: 15px;
       line-height: 1.7;
       margin-bottom: 0;
@@ -1612,39 +1642,64 @@
         </div>
         <div class="testimonials-grid">
           <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <div class="testimonial-header">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-source"><i class="fab fa-trustpilot"></i> Trustpilot</span>
             </div>
+            <div class="testimonial-title">Reliable booking software we've used throughout 2025</div>
             <blockquote class="testimonial-text">
-              <p>"We used to lose 3-4 bookings a day because clients could not reach us by phone. After setting up SimplyBook.me, 80% of our bookings come in online, and our no-show rate dropped by a third. The automated reminders alone paid for the subscription in the first week."</p>
+              <p>"We've been running both branches of our beauty center in Austria with SimplyBook.me for over a year now. Throughout 2025, the platform has consistently delivered smooth performance for managing our appointments. The system is intuitive for both our team and clients. Support has been quick to help whenever needed. Very satisfied with this solution for our multi-location business."</p>
             </blockquote>
             <div class="testimonial-author">
-              <strong>Operations Manager</strong>
-              <span>Multi-Location Beauty Salon, UK</span>
+              <strong>Kenan AFŞAR</strong>
+              <span>Beauty Center, Austria</span>
             </div>
           </div>
           <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <div class="testimonial-header">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-source"><i class="fab fa-trustpilot"></i> Trustpilot</span>
             </div>
+            <div class="testimonial-title">At last! I've finally found it.</div>
             <blockquote class="testimonial-text">
-              <p>"I run my personal training business solo. SimplyBook.me gave me back about 5 hours a week that I used to spend on scheduling and confirmations. My clients love booking on their own time, and I love not playing phone tag."</p>
+              <p>"Oh my gosh you guys, I've finally found it! After trying everything, the search is over: SimplyBook.me is the online booking system I have been looking for. It's powerful, customizable, and allows you to only pay for what you need. Plus, they have thought of absolutely everything: Packages? Coupons? Multiple Locations? Multiple Providers? It's all there and integrated beautifully into one incredible platform."</p>
             </blockquote>
             <div class="testimonial-author">
-              <strong>Owner</strong>
-              <span>Personal Training Studio, California</span>
+              <strong>Bodie Quirk</strong>
             </div>
           </div>
           <div class="testimonial-card">
-            <div class="testimonial-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <div class="testimonial-header">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-source"><i class="fab fa-trustpilot"></i> Trustpilot</span>
             </div>
+            <div class="testimonial-title">Great price &amp; features, amazing customer service!</div>
             <blockquote class="testimonial-text">
-              <p>"Managing bookings across four clinic locations was a nightmare before SimplyBook.me. Now everything runs through one dashboard. We can see availability across all branches in real time and clients book online 24/7."</p>
+              <p>"The price for the amount of features you get is better than pretty much anything else. There are a lot of different features to meet most businesses needs. In the event their product can't meet your needs perfectly, the customer service is amazing! They actually take the time to understand what you are trying to do, and use critical thinking skills to propose various work-arounds."</p>
             </blockquote>
             <div class="testimonial-author">
-              <strong>Clinic Administrator</strong>
-              <span>Dental Practice Group, Germany</span>
+              <strong>Lindsay Goodwin</strong>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-source"><i class="fab fa-trustpilot"></i> Trustpilot</span>
+            </div>
+            <div class="testimonial-title">Excellent tool with great local payment options and support</div>
+            <blockquote class="testimonial-text">
+              <p>"SimplyBook.me is the only online booking tool I found that allowed me to integrate local payment solutions. A huge advantage for my business. On top of that, their IT support team has always been responsive and helpful, guiding me whenever I had questions. The platform is reliable, easy to use, and backed by excellent service. Highly recommended!"</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <strong>Nadia</strong>
             </div>
           </div>
         </div>
