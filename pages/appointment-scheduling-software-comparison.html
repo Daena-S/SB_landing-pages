@@ -420,17 +420,9 @@
     }
 
     .hero-disclosure {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 600;
-      font-family: var(--font-heading);
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
+      font-size: 13px;
       color: var(--color-text-muted);
-      background: var(--color-bg-light);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-pill);
-      padding: 4px 14px;
+      font-style: italic;
       margin-bottom: 20px;
     }
 
@@ -776,81 +768,88 @@
     ============================ */
     .which-tool-section {
       padding: 100px 0;
-      background: var(--color-bg-white);
+      background: var(--color-bg-light);
     }
 
-    .tool-cards-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
+    .tool-list {
       margin-top: 48px;
-    }
-
-    .tool-card {
-      background: var(--color-bg-white);
-      border: 1px solid var(--color-border);
       border-radius: var(--radius-card);
-      padding: 28px 32px;
-      box-shadow: var(--shadow-default);
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      transition: box-shadow 0.2s ease;
-    }
-
-    .tool-card:hover {
+      border: 1px solid var(--color-border);
+      overflow: hidden;
       box-shadow: var(--shadow-card);
     }
 
-    .tool-card.simplybook-card {
-      border-color: var(--color-primary);
-      background-color: var(--color-bg-white);
+    .tool-row {
+      display: grid;
+      grid-template-columns: 200px 1fr auto;
+      gap: 32px;
+      align-items: center;
+      padding: 28px 36px;
+      background: var(--color-bg-white);
+      border-bottom: 1px solid var(--color-border);
+      transition: background 0.15s ease;
     }
 
-    .tool-card-label {
-      display: inline-block;
+    .tool-row:last-child {
+      border-bottom: none;
+    }
+
+    .tool-row:hover {
+      background: var(--color-bg-light);
+    }
+
+    .tool-row.simplybook-row {
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .tool-row-name {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .tool-row-name .tool-eyebrow {
       font-size: 11px;
       font-weight: 700;
       font-family: var(--font-heading);
       text-transform: uppercase;
       letter-spacing: 0.6px;
-      padding: 3px 12px;
-      border-radius: var(--radius-pill);
-      background: var(--color-bg-blue);
+      color: var(--color-text-muted);
+    }
+
+    .tool-row.simplybook-row .tool-eyebrow {
       color: var(--color-primary);
     }
 
-    .tool-card.simplybook-card .tool-card-label {
-      background: var(--color-primary);
-      color: #FFFFFF;
-    }
-
-    .tool-card h3 {
-      font-size: 18px;
+    .tool-row-name h3 {
+      font-size: 16px;
       font-weight: 800;
       color: var(--color-text-primary);
+      margin: 0;
+      line-height: 1.3;
     }
 
-    .tool-card .best-fit {
+    .tool-row-desc {
       font-size: 14px;
-      line-height: 1.6;
       color: var(--color-text-secondary);
-      flex: 1;
+      line-height: 1.7;
+      margin: 0;
     }
 
-    .tool-card a {
+    .tool-row-link {
       font-family: var(--font-heading);
       font-size: 14px;
       font-weight: 700;
       color: var(--color-primary);
-      display: inline-flex;
+      white-space: nowrap;
+      display: flex;
       align-items: center;
       gap: 6px;
-      margin-top: 4px;
+      text-decoration: none;
     }
 
-    .tool-card a:hover {
-      text-decoration: underline;
+    .tool-row-link:hover {
+      color: var(--color-primary-hover);
     }
 
     /* ============================
@@ -940,70 +939,94 @@
     }
 
     /* ============================
-       SECTION 6: HOW TO SWITCH (STEPS)
+       SWITCH SECTION LAYOUT
     ============================ */
     .steps-section {
-      padding: 100px 0;
-      background: var(--color-bg-white);
+      padding: 80px 0;
+      background: var(--color-bg-dark);
     }
 
-    .steps-grid {
+    .switch-inner {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 36px;
-      margin-top: 48px;
-      position: relative;
+      grid-template-columns: 1fr 340px;
+      gap: 64px;
+      align-items: center;
     }
 
-    .steps-grid::before {
-      content: '';
-      position: absolute;
-      top: 28px;
-      left: calc(16.66% + 16px);
-      right: calc(16.66% + 16px);
-      height: 2px;
-      background: var(--color-border-grey);
-      z-index: 0;
-    }
-
-    .step-item {
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-
-    .step-number {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: var(--color-primary);
-      color: #FFFFFF;
+    .switch-text h2 {
       font-family: var(--font-heading);
-      font-size: 22px;
+      font-size: 36px;
       font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .switch-text > p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 28px;
+    }
+
+    .switch-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .switch-points li {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      box-shadow: 0 4px 12px rgba(6, 173, 239, 0.35);
-    }
-
-    .step-item h3 {
-      font-size: 18px;
-      font-weight: 800;
-      margin-bottom: 10px;
-      color: var(--color-text-primary);
-    }
-
-    .step-item p {
+      gap: 10px;
       font-size: 15px;
-      line-height: 1.6;
-      color: var(--color-text-secondary);
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
     }
 
-    .steps-cta {
+    .switch-points li::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 11px;
+      flex-shrink: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='11' viewBox='0 0 16 11' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5441 0.439751C16.1559 1.0223 16.1513 1.9625 15.5339 2.53973L6.48487 11L0.466062 5.37282C-0.151346 4.79558 -0.155915 3.85539 0.455855 3.27284C1.06763 2.69028 2.06407 2.68597 2.68148 3.26321L6.48487 6.81912L13.3185 0.430121C13.9359 -0.147114 14.9324 -0.142802 15.5441 0.439751Z' fill='%2306ADEF'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .switch-cta {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 40px 36px;
       text-align: center;
-      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .switch-cta .btn--primary {
+      width: 100%;
+      text-align: center;
+      padding: 16px 24px;
+      font-size: 16px;
+    }
+
+    .switch-note {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .switch-note a {
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: underline;
+    }
+
+    .switch-note a:hover {
+      color: #FFFFFF;
     }
 
     /* ============================
@@ -1246,11 +1269,19 @@
         grid-template-columns: 1fr;
       }
 
-      .tool-cards-grid {
-        grid-template-columns: 1fr 1fr;
+      .tool-row {
+        grid-template-columns: 160px 1fr;
+        grid-template-rows: auto auto;
       }
+      .tool-row-link { grid-column: 2; }
 
-      .steps-grid::before { display: none; }
+      .switch-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .switch-cta {
+        width: 100%;
+      }
 
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1276,7 +1307,11 @@
       .hero-ctas { flex-direction: column; align-items: stretch; text-align: center; }
       .hero-ctas .btn { width: 100%; text-align: center; }
 
-      .tool-cards-grid { grid-template-columns: 1fr; }
+      .tool-row { grid-template-columns: 1fr; gap: 12px; padding: 24px 20px; }
+      .tool-row-link { grid-column: 1; }
+
+      .switch-text h2 { font-size: 28px; }
+      .switch-cta { padding: 28px 24px; }
 
       .steps-grid {
         grid-template-columns: 1fr;
@@ -1866,38 +1901,42 @@
         <div class="section-header text-center">
           <h2 id="which-tool-heading">Which Appointment Scheduling Platform Is Right for Your Business?</h2>
         </div>
-        <div class="tool-cards-grid">
+        <div class="tool-list">
 
-          <!-- SimplyBook.me -->
-          <div class="tool-card simplybook-card">
-            <span class="tool-card-label">SimplyBook.me</span>
-            <h3>Best for service businesses that want to grow revenue</h3>
-            <p class="best-fit">Salons, spas, wellness studios, healthcare providers, tutors, and any business needing payment flexibility, compliance, or revenue tools like memberships and loyalty programs. The only platform here with 40+ payment gateways and HIPAA compliance below the top pricing tier.</p>
-            <a href="#comparison">See detailed 1v1 comparisons below &rarr;</a>
+          <div class="tool-row simplybook-row">
+            <div class="tool-row-name">
+              <span class="tool-eyebrow">SimplyBook.me</span>
+              <h3>Best for service businesses that want to grow revenue</h3>
+            </div>
+            <p class="tool-row-desc">Salons, spas, wellness studios, healthcare providers, tutors, and any business needing payment flexibility, compliance, or revenue tools like memberships and loyalty programs. The only platform here with 40+ payment gateways and HIPAA compliance below the top pricing tier.</p>
+            <a href="https://simplybook.me/en/pricing" class="tool-row-link">Start free &rarr;</a>
           </div>
 
-          <!-- Calendly -->
-          <div class="tool-card">
-            <span class="tool-card-label">Calendly</span>
-            <h3>Best for sales teams and professional scheduling</h3>
-            <p class="best-fit">Sales teams, recruiters, consultants, and SaaS companies managing meeting scheduling with CRM automation (HubSpot, Salesforce). Not designed for service businesses collecting payments, managing staff, or requiring HIPAA. Explicitly does not sign BAAs.</p>
-            <a href="/pages/simplybook-me-vs-calendly.html">SimplyBook.me vs Calendly &rarr;</a>
+          <div class="tool-row">
+            <div class="tool-row-name">
+              <span class="tool-eyebrow">Calendly</span>
+              <h3>Best for sales teams and professional scheduling</h3>
+            </div>
+            <p class="tool-row-desc">Sales teams, recruiters, consultants, and SaaS companies managing meeting scheduling with CRM automation. Not designed for service businesses collecting payments, managing staff, or requiring HIPAA compliance.</p>
+            <a href="/pages/simplybook-me-vs-calendly.html" class="tool-row-link">Compare &rarr;</a>
           </div>
 
-          <!-- Setmore -->
-          <div class="tool-card">
-            <span class="tool-card-label">Setmore</span>
-            <h3>Best for solopreneurs on a tight budget</h3>
-            <p class="best-fit">Solo practitioners and very small teams (2–4 people) needing a free or near-free solution. Strong free plan with 4 users and unlimited bookings. No native memberships, packages, gift cards, or loyalty program - tends to get outgrown as businesses scale.</p>
-            <a href="/pages/simplybook-me-vs-setmore.html">SimplyBook.me vs Setmore &rarr;</a>
+          <div class="tool-row">
+            <div class="tool-row-name">
+              <span class="tool-eyebrow">Setmore</span>
+              <h3>Best for solopreneurs on a tight budget</h3>
+            </div>
+            <p class="tool-row-desc">Solo practitioners and very small teams needing a free or near-free solution. Strong free plan with 4 users and unlimited bookings. No native memberships, packages, gift cards, or loyalty program.</p>
+            <a href="/pages/simplybook-me-vs-setmore.html" class="tool-row-link">Compare &rarr;</a>
           </div>
 
-          <!-- Acuity -->
-          <div class="tool-card">
-            <span class="tool-card-label">Acuity Scheduling</span>
-            <h3>Best for Squarespace users needing reliable scheduling</h3>
-            <p class="best-fit">Established service businesses in the Squarespace ecosystem needing solid scheduling and strong email marketing integrations. Unlimited bookings on all plans is a genuine advantage for high-volume businesses. No free plan and HIPAA only on the top tier.</p>
-            <a href="/pages/simplybook-me-vs-acuity-scheduling.html">SimplyBook.me vs Acuity Scheduling &rarr;</a>
+          <div class="tool-row">
+            <div class="tool-row-name">
+              <span class="tool-eyebrow">Acuity Scheduling</span>
+              <h3>Best for Squarespace users needing reliable scheduling</h3>
+            </div>
+            <p class="tool-row-desc">Established service businesses in the Squarespace ecosystem needing solid scheduling and strong email marketing integrations. Unlimited bookings on all plans is a genuine advantage for high-volume businesses.</p>
+            <a href="/pages/simplybook-me-vs-acuity-scheduling.html" class="tool-row-link">Compare &rarr;</a>
           </div>
 
         </div>
@@ -1959,12 +1998,20 @@
     ============================ -->
     <section class="steps-section" aria-labelledby="switch-heading">
       <div class="container">
-        <div class="section-header text-center">
-          <h2 id="switch-heading">Ready to Make the Switch?</h2>
-          <p>Our team will handle the entire migration for you. Book a call and we'll take care of the rest.</p>
-        </div>
-        <div class="text-center">
-          <a href="https://bigaccounts.simplybook.it/v2/?widget-type=button&theme=creative&theme=creative&timeline=modern&datepicker=inline_datepicker&class=enterprise-widget%20enterprise-widget__white&_ga=GA1.1.1894475392.1759418267#book/category/21/count/1/provider/any/" class="btn btn--primary btn--lg">Book a Call With Our Team</a>
+        <div class="switch-inner">
+          <div class="switch-text">
+            <h2 id="switch-heading">Ready to Make the Switch?</h2>
+            <p>Our team will handle the entire migration for you. We'll import your clients, configure your services, and get your booking page live. Book a call and we'll take care of the rest.</p>
+            <ul class="switch-points">
+              <li>Free migration assistance</li>
+              <li>No credit card required to start</li>
+              <li>Live in under 15 minutes</li>
+            </ul>
+          </div>
+          <div class="switch-cta">
+            <a href="https://bigaccounts.simplybook.it/v2/?widget-type=button&theme=creative&theme=creative&timeline=modern&datepicker=inline_datepicker&class=enterprise-widget%20enterprise-widget__white&_ga=GA1.1.1894475392.1759418267#book/category/21/count/1/provider/any/" class="btn btn--primary btn--lg">Book a Call With Our Team</a>
+            <p class="switch-note">Or <a href="https://simplybook.me/en/pricing">start your free plan</a> and explore on your own.</p>
+          </div>
         </div>
       </div>
     </section>
