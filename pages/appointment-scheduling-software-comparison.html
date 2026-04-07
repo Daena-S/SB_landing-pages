@@ -730,105 +730,62 @@
     .pricing-tabs {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 32px;
+      gap: 40px 48px;
       margin-bottom: 48px;
     }
 
-    .pricing-block {
-      background: var(--color-bg-white);
-      border: 1px solid var(--color-border);
+    .pricing-block h3 {
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    .pricing-table-wrapper {
+      overflow-x: auto;
       border-radius: var(--radius-card);
-      overflow: hidden;
-      box-shadow: var(--shadow-default);
-    }
-
-    .pricing-block.simplybook-block {
-      border-color: var(--color-primary);
-      box-shadow: 0 0 0 2px var(--color-primary), var(--shadow-card);
-    }
-
-    .pricing-block-header {
-      padding: 16px 20px;
-      background: var(--color-bg-light);
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .pricing-block.simplybook-block .pricing-block-header {
-      background: var(--color-primary);
-    }
-
-    .pricing-block-header h3 {
-      font-size: 16px;
-      font-weight: 800;
-      color: var(--color-text-primary);
-      margin-bottom: 2px;
-    }
-
-    .pricing-block.simplybook-block .pricing-block-header h3 {
-      color: #FFFFFF;
-    }
-
-    .pricing-block-header p {
-      font-size: 12px;
-      color: var(--color-text-muted);
-      margin: 0;
-    }
-
-    .pricing-block.simplybook-block .pricing-block-header p {
-      color: rgba(255,255,255,0.7);
+      border: 1px solid var(--color-border);
+      margin-bottom: 10px;
     }
 
     .pricing-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 13px;
+      font-size: 14px;
     }
 
-    .pricing-table th {
-      padding: 10px 14px;
+    .pricing-table thead th {
+      background-color: var(--color-bg-dark);
+      color: var(--color-text-white);
       font-family: var(--font-heading);
       font-weight: 700;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--color-text-muted);
-      background: var(--color-bg-light);
+      font-size: 14px;
+      padding: 12px 16px;
       text-align: left;
-      border-bottom: 1px solid var(--color-border);
+      border: none;
     }
 
-    .pricing-table td {
-      padding: 10px 14px;
+    .pricing-table thead th:first-child { border-radius: var(--radius-card) 0 0 0; }
+    .pricing-table thead th:last-child  { border-radius: 0 var(--radius-card) 0 0; }
+
+    .pricing-table tbody td {
+      padding: 11px 16px;
       border-bottom: 1px solid var(--color-border);
       color: var(--color-text-secondary);
       vertical-align: middle;
     }
 
-    .pricing-table tr:last-child td {
-      border-bottom: none;
-    }
+    .pricing-table tbody tr:nth-child(even) { background-color: var(--color-bg-light); }
+    .pricing-table tbody tr:last-child td   { border-bottom: none; }
 
-    .pricing-table td:first-child {
+    .pricing-table tbody td:first-child {
       font-family: var(--font-heading);
       font-weight: 700;
       color: var(--color-text-primary);
     }
 
-    .pricing-table .free-row td {
-      background: var(--color-success-light);
-      color: var(--color-text-secondary);
-    }
-
-    .pricing-table .free-row td:first-child {
-      color: var(--color-success);
-    }
-
     .pricing-note {
-      padding: 10px 14px;
-      font-size: 12px;
+      font-size: 13px;
       color: var(--color-text-muted);
-      background: var(--color-bg-light);
-      border-top: 1px solid var(--color-border);
+      font-style: italic;
     }
 
     .pricing-callout {
@@ -1772,189 +1729,180 @@
 
         <div class="pricing-tabs">
           <!-- SimplyBook.me -->
-          <div class="pricing-block simplybook-block">
-            <div class="pricing-block-header">
-              <h3>SimplyBook.me</h3>
-              <p>EUR, per business, April 2026</p>
+          <div class="pricing-block">
+            <h3>SimplyBook.me <span style="font-weight:400;font-size:14px;color:var(--color-text-muted);">(EUR, per business)</span></h3>
+            <div class="pricing-table-wrapper">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th>Plan</th>
+                    <th>Monthly</th>
+                    <th>Annual/mo</th>
+                    <th>Providers</th>
+                    <th>Bookings/mo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Free</td>
+                    <td>€0</td>
+                    <td>€0</td>
+                    <td>1</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Basic</td>
+                    <td>€13.90</td>
+                    <td>€11.90</td>
+                    <td>5</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Standard</td>
+                    <td>€29.90</td>
+                    <td>€24.90</td>
+                    <td>15</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>Premium</td>
+                    <td>€59.90</td>
+                    <td>€49.90</td>
+                    <td>30</td>
+                    <td>2,000</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <table class="pricing-table" aria-label="SimplyBook.me pricing">
-              <thead>
-                <tr>
-                  <th>Plan</th>
-                  <th>Monthly</th>
-                  <th>Annual/mo</th>
-                  <th>Providers</th>
-                  <th>Bookings/mo</th>
-                  <th>Custom Features</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="free-row">
-                  <td>Free</td>
-                  <td>€0</td>
-                  <td>€0</td>
-                  <td>1</td>
-                  <td>50</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Basic</td>
-                  <td>€13.90</td>
-                  <td>€11.90</td>
-                  <td>5</td>
-                  <td>100</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>Standard</td>
-                  <td>€29.90</td>
-                  <td>€24.90</td>
-                  <td>15</td>
-                  <td>500</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td>Premium</td>
-                  <td>€59.90</td>
-                  <td>€49.90</td>
-                  <td>30</td>
-                  <td>2,000</td>
-                  <td>Unlimited</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="pricing-note">Free plan, no credit card required. 14-day free trial on paid plans.</div>
+            <p class="pricing-note">Free plan, no credit card required. 14-day free trial on paid plans.</p>
           </div>
 
           <!-- Calendly -->
           <div class="pricing-block">
-            <div class="pricing-block-header">
-              <h3>Calendly</h3>
-              <p>USD, per seat, April 2026</p>
+            <h3>Calendly <span style="font-weight:400;font-size:14px;color:var(--color-text-muted);">(USD, per seat)</span></h3>
+            <div class="pricing-table-wrapper">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th>Plan</th>
+                    <th>Monthly</th>
+                    <th>Annual/mo</th>
+                    <th>Key restriction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Free</td>
+                    <td>$0</td>
+                    <td>$0</td>
+                    <td>1 active event type only</td>
+                  </tr>
+                  <tr>
+                    <td>Standard</td>
+                    <td>$12/seat</td>
+                    <td>$10/seat</td>
+                    <td>No Salesforce, no CRM routing</td>
+                  </tr>
+                  <tr>
+                    <td>Teams</td>
+                    <td>$20/seat</td>
+                    <td>$16/seat</td>
+                    <td>SSO is an add-on</td>
+                  </tr>
+                  <tr>
+                    <td>Enterprise</td>
+                    <td>Custom</td>
+                    <td>From $15,000/yr</td>
+                    <td>Sales call required</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <table class="pricing-table" aria-label="Calendly pricing">
-              <thead>
-                <tr>
-                  <th>Plan</th>
-                  <th>Monthly</th>
-                  <th>Annual/mo</th>
-                  <th>Key restriction</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="free-row">
-                  <td>Free</td>
-                  <td>$0</td>
-                  <td>$0</td>
-                  <td>1 active event type only</td>
-                </tr>
-                <tr>
-                  <td>Standard</td>
-                  <td>$12/seat</td>
-                  <td>$10/seat</td>
-                  <td>No round-robin, no Salesforce</td>
-                </tr>
-                <tr>
-                  <td>Teams</td>
-                  <td>$20/seat</td>
-                  <td>$16/seat</td>
-                  <td>SSO is an add-on</td>
-                </tr>
-                <tr>
-                  <td>Enterprise</td>
-                  <td>Custom</td>
-                  <td>From $15,000/yr</td>
-                  <td>Sales call required</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="pricing-note">A 20-person team on Teams plan = $320–$400/month.</div>
+            <p class="pricing-note">A 20-person team on Teams plan = $320–$400/month.</p>
           </div>
 
           <!-- Setmore -->
           <div class="pricing-block">
-            <div class="pricing-block-header">
-              <h3>Setmore</h3>
-              <p>USD, per user, April 2026</p>
+            <h3>Setmore <span style="font-weight:400;font-size:14px;color:var(--color-text-muted);">(USD, per user)</span></h3>
+            <div class="pricing-table-wrapper">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th>Plan</th>
+                    <th>Monthly</th>
+                    <th>Annual/mo</th>
+                    <th>Users</th>
+                    <th>Bookings</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Free</td>
+                    <td>$0</td>
+                    <td>$0</td>
+                    <td>Up to 4</td>
+                    <td>Unlimited</td>
+                  </tr>
+                  <tr>
+                    <td>Pro</td>
+                    <td>$12/user</td>
+                    <td>$5/user</td>
+                    <td>1–4 users</td>
+                    <td>Unlimited</td>
+                  </tr>
+                  <tr>
+                    <td>Team</td>
+                    <td>$9/user</td>
+                    <td>$5/user</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <table class="pricing-table" aria-label="Setmore pricing">
-              <thead>
-                <tr>
-                  <th>Plan</th>
-                  <th>Monthly</th>
-                  <th>Annual/mo</th>
-                  <th>Users</th>
-                  <th>Bookings</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="free-row">
-                  <td>Free</td>
-                  <td>$0</td>
-                  <td>$0</td>
-                  <td>Up to 4</td>
-                  <td>Unlimited</td>
-                </tr>
-                <tr>
-                  <td>Pro</td>
-                  <td>$12/user</td>
-                  <td>$5/user</td>
-                  <td>1–4 users</td>
-                  <td>Unlimited</td>
-                </tr>
-                <tr>
-                  <td>Team</td>
-                  <td>$9/user</td>
-                  <td>$5/user</td>
-                  <td>Unlimited users</td>
-                  <td>Unlimited</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="pricing-note">Payments require Pro plan and above.</div>
+            <p class="pricing-note">Payments require Pro plan and above.</p>
           </div>
 
           <!-- Acuity -->
           <div class="pricing-block">
-            <div class="pricing-block-header">
-              <h3>Acuity Scheduling</h3>
-              <p>USD, per business, April 2026</p>
+            <h3>Acuity Scheduling <span style="font-weight:400;font-size:14px;color:var(--color-text-muted);">(USD, per business)</span></h3>
+            <div class="pricing-table-wrapper">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th>Plan</th>
+                    <th>Monthly</th>
+                    <th>Annual/mo</th>
+                    <th>Calendars</th>
+                    <th>Bookings</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Starter</td>
+                    <td>$20</td>
+                    <td>$16</td>
+                    <td>1</td>
+                    <td>Unlimited</td>
+                  </tr>
+                  <tr>
+                    <td>Standard</td>
+                    <td>$34</td>
+                    <td>$27</td>
+                    <td>Up to 6</td>
+                    <td>Unlimited</td>
+                  </tr>
+                  <tr>
+                    <td>Premium</td>
+                    <td>$61</td>
+                    <td>$49</td>
+                    <td>Up to 36</td>
+                    <td>Unlimited</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <table class="pricing-table" aria-label="Acuity Scheduling pricing">
-              <thead>
-                <tr>
-                  <th>Plan</th>
-                  <th>Monthly</th>
-                  <th>Annual/mo</th>
-                  <th>Calendars</th>
-                  <th>Bookings</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Starter</td>
-                  <td>$20</td>
-                  <td>$16</td>
-                  <td>1</td>
-                  <td>Unlimited</td>
-                </tr>
-                <tr>
-                  <td>Standard</td>
-                  <td>$34</td>
-                  <td>$27</td>
-                  <td>Up to 6</td>
-                  <td>Unlimited</td>
-                </tr>
-                <tr>
-                  <td>Premium</td>
-                  <td>$61</td>
-                  <td>$49</td>
-                  <td>Up to 36</td>
-                  <td>Unlimited</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="pricing-note">No free plan. 7-day free trial only.</div>
+            <p class="pricing-note">No free plan. 7-day free trial only.</p>
           </div>
         </div>
 
@@ -2058,9 +2006,7 @@
           </table>
         </div>
 
-        <div class="reviews-note">
-          <strong>Trustpilot scores are revealing.</strong> SimplyBook.me (4.4/5, 78% 5-star) and Setmore (4.9/5, 87% 5-star) maintain strong satisfaction. Calendly (2.9/5) and Acuity (3.7/5) show more polarized distributions, driven primarily by billing and support complaints. Sources: <a href="https://capterra.com" target="_blank" rel="noopener">capterra.com</a>, <a href="https://trustpilot.com" target="_blank" rel="noopener">trustpilot.com</a>, <a href="https://g2.com" target="_blank" rel="noopener">g2.com</a>. Verified April 2026.
-        </div>
+        <p class="comparison-note">Sources: capterra.com, trustpilot.com, g2.com. Verified April 2026.</p>
       </div>
     </section>
 
@@ -2070,28 +2016,11 @@
     <section class="steps-section" aria-labelledby="switch-heading">
       <div class="container">
         <div class="section-header text-center">
-          <h2 id="switch-heading">Switching to SimplyBook.me Is Easier Than You Think</h2>
-          <p>Our team can handle the entire migration for you.</p>
+          <h2 id="switch-heading">Ready to Make the Switch?</h2>
+          <p>Our team will handle the entire migration for you. Book a call and we'll take care of the rest.</p>
         </div>
-        <div class="steps-grid">
-          <div class="step-item">
-            <div class="step-number" aria-hidden="true">1</div>
-            <h3>Start for free</h3>
-            <p>Set up your account in minutes. No credit card required. Your booking page is live before you finish your first coffee.</p>
-          </div>
-          <div class="step-item">
-            <div class="step-number" aria-hidden="true">2</div>
-            <h3>Import your clients</h3>
-            <p>Export a CSV from your current platform and upload it directly. Your client list moves with you in one step.</p>
-          </div>
-          <div class="step-item">
-            <div class="step-number" aria-hidden="true">3</div>
-            <h3>Configure your services</h3>
-            <p>Use the AI setup assistant to set up services, staff, and availability. Most businesses are fully configured in under 15 minutes.</p>
-          </div>
-        </div>
-        <div class="steps-cta">
-          <a href="https://simplybook.me/en/booking-demo" class="btn btn--primary btn--lg">Book a Call With Our Team</a>
+        <div class="text-center">
+          <a href="https://bigaccounts.simplybook.it/v2/?widget-type=button&theme=creative&theme=creative&timeline=modern&datepicker=inline_datepicker&class=enterprise-widget%20enterprise-widget__white&_ga=GA1.1.1894475392.1759418267#book/category/21/count/1/provider/any/" class="btn btn--primary btn--lg">Book a Call With Our Team</a>
         </div>
       </div>
     </section>
