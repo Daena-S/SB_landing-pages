@@ -990,48 +990,67 @@
     /* ============================
        SWITCH SECTION LAYOUT
     ============================ */
+    /* ============================
+       SECTION: READY TO SWITCH (DARK NAVY)
+    ============================ */
     .steps-section {
-      padding: 80px 0;
-      background: var(--color-bg-dark);
+      padding: 100px 0;
+      background: #0B3052;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .steps-section::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(6, 173, 239, 0.10) 0%, transparent 70%);
+      pointer-events: none;
     }
 
     .switch-inner {
       display: grid;
-      grid-template-columns: 1fr 340px;
-      gap: 64px;
+      grid-template-columns: 1fr 360px;
+      gap: 80px;
       align-items: center;
+      position: relative;
     }
 
     .switch-text h2 {
-      font-family: var(--font-heading);
-      font-size: 36px;
+      font-family: 'Mulish', sans-serif;
+      font-size: 40px;
       font-weight: 800;
       color: #FFFFFF;
       margin-bottom: 16px;
-      line-height: 1.2;
+      line-height: 1.15;
     }
 
     .switch-text > p {
       font-size: 16px;
       line-height: 1.7;
-      color: rgba(255, 255, 255, 0.72);
-      margin-bottom: 28px;
+      color: rgba(255, 255, 255, 0.65);
+      margin-bottom: 32px;
     }
 
     .switch-points {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 14px;
     }
 
     .switch-points li {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+      font-family: 'Mulish', sans-serif;
       font-size: 15px;
       font-weight: 600;
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.88);
     }
 
     .switch-points li::before {
@@ -1046,31 +1065,57 @@
     }
 
     .switch-cta {
-      background: rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 16px;
-      padding: 40px 36px;
+      padding: 48px 40px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 16px;
+    }
+
+    .switch-cta-label {
+      font-family: 'Mulish', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #06ADEF;
+      margin-bottom: 4px;
+    }
+
+    .switch-cta h3 {
+      font-family: 'Mulish', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin: 0 0 8px;
+      line-height: 1.3;
+    }
+
+    .switch-cta-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.6;
+      margin-bottom: 8px;
     }
 
     .switch-cta .btn--primary {
       width: 100%;
       text-align: center;
       padding: 16px 24px;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     .switch-note {
       font-size: 13px;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.4);
     }
 
     .switch-note a {
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(255, 255, 255, 0.65);
       text-decoration: underline;
     }
 
@@ -1079,26 +1124,66 @@
     }
 
     /* ============================
-       CTA BANNER (DARK)
+       CTA BANNER (PALE BLUE)
     ============================ */
     .cta-banner {
-      background-color: var(--color-bg-dark);
-      padding: 80px 0 60px;
+      background: #F6F9FD;
+      padding: 100px 0;
       text-align: center;
     }
 
-    .cta-banner h2 {
-      color: #FFFFFF;
-      margin-bottom: 16px;
-      font-size: 32px;
+    .cta-banner-inner {
+      max-width: 640px;
+      margin: 0 auto;
     }
 
-    .cta-banner p {
-      color: rgba(255, 255, 255, 0.75);
-      font-size: 17px;
-      max-width: 600px;
-      margin: 0 auto 36px;
+    .cta-banner h2 {
+      color: #0B3052;
+      margin-bottom: 16px;
+      font-family: 'Mulish', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .cta-banner > .cta-banner-inner > p {
+      color: #788291;
+      font-size: 16px;
       line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .cta-feature-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+
+    .cta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FFFFFF;
+      border: 1px solid #D5E0F0;
+      border-radius: 50px;
+      padding: 6px 14px;
+      font-family: 'Mulish', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #0B3052;
+    }
+
+    .cta-pill::before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 10px;
+      flex-shrink: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='11' viewBox='0 0 16 11' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5441 0.439751C16.1559 1.0223 16.1513 1.9625 15.5339 2.53973L6.48487 11L0.466062 5.37282C-0.151346 4.79558 -0.155915 3.85539 0.455855 3.27284C1.06763 2.69028 2.06407 2.68597 2.68148 3.26321L6.48487 6.81912L13.3185 0.430121C13.9359 -0.147114 14.9324 -0.142802 15.5441 0.439751Z' fill='%2306ADEF'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     .cta-banner-actions {
@@ -1110,14 +1195,15 @@
     }
 
     .cta-banner-secondary {
-      color: rgba(255,255,255,0.7);
+      color: #788291;
       font-size: 14px;
-      font-family: var(--font-heading);
-      font-weight: 500;
+      font-family: 'Mulish', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
     }
 
     .cta-banner-secondary:hover {
-      color: #FFFFFF;
+      color: #0B3052;
       text-decoration: underline;
     }
 
@@ -1331,9 +1417,6 @@
         grid-template-columns: 1fr;
         gap: 40px;
       }
-      .switch-cta {
-        width: 100%;
-      }
 
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1368,17 +1451,14 @@
       .tool-competitors { grid-template-columns: 1fr; }
 
       .switch-text h2 { font-size: 28px; }
-      .switch-cta { padding: 28px 24px; }
+      .switch-cta { padding: 32px 28px; }
 
-      .steps-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
-      }
-
-      .cta-banner { padding: 56px 0 44px; }
+      .cta-banner { padding: 64px 0; }
       .cta-banner h2 { font-size: 26px; }
-      .cta-banner-actions { flex-direction: column; }
+      .cta-feature-pills { gap: 8px; }
+      .cta-banner-actions { flex-direction: column; align-items: stretch; }
       .cta-banner-actions .btn { width: 100%; text-align: center; }
+      .cta-banner-secondary { text-align: center; }
 
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
 
@@ -2057,6 +2137,9 @@
             </ul>
           </div>
           <div class="switch-cta">
+            <p class="switch-cta-label">Get started today</p>
+            <h3>Talk to our team</h3>
+            <p class="switch-cta-desc">We'll walk you through setup and handle your migration from start to finish.</p>
             <a href="https://bigaccounts.simplybook.it/v2/?widget-type=button&theme=creative&theme=creative&timeline=modern&datepicker=inline_datepicker&class=enterprise-widget%20enterprise-widget__white&_ga=GA1.1.1894475392.1759418267#book/category/21/count/1/provider/any/" class="btn btn--primary btn--lg">Book a Call With Our Team</a>
             <p class="switch-note">Or <a href="https://simplybook.me/en/pricing">start your free plan</a> and explore on your own.</p>
           </div>
@@ -2069,11 +2152,20 @@
     ============================ -->
     <section class="cta-banner" aria-labelledby="cta-heading">
       <div class="container">
-        <h2 id="cta-heading">Ready to Try the Most Flexible Booking Platform?</h2>
-        <p>Free plan. 40+ payment gateways. HIPAA from the Standard plan. A branded client app. A loyalty program. SimplyBook.me gives service businesses the tools to grow - not just schedule.</p>
-        <div class="cta-banner-actions">
-          <a href="https://simplybook.me/en/pricing" class="btn btn--primary btn--lg">Start Free - No Credit Card Required</a>
-          <a href="https://simplybook.me/en/booking-demo" class="cta-banner-secondary">Or book a personalized demo</a>
+        <div class="cta-banner-inner">
+          <h2 id="cta-heading">Ready to Try the Most Flexible Booking Platform?</h2>
+          <p>SimplyBook.me gives service businesses the tools to grow - not just schedule.</p>
+          <div class="cta-feature-pills">
+            <span class="cta-pill">Free plan</span>
+            <span class="cta-pill">40+ payment gateways</span>
+            <span class="cta-pill">HIPAA from Standard plan</span>
+            <span class="cta-pill">Branded client app</span>
+            <span class="cta-pill">Loyalty program</span>
+          </div>
+          <div class="cta-banner-actions">
+            <a href="https://simplybook.me/en/pricing" class="btn btn--primary btn--lg">Start Free - No Credit Card Required</a>
+            <a href="https://simplybook.me/en/booking-demo" class="cta-banner-secondary">Or book a personalized demo</a>
+          </div>
         </div>
       </div>
     </section>
