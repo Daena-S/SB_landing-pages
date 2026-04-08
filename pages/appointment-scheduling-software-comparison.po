@@ -1,0 +1,1209 @@
+# SimplyBook.me Landing Page — Appointment Scheduling Software Comparison
+# Page: /en/appointment-scheduling-software-comparison
+# Copyright (C) SimplyBook.me
+# This file is distributed under the same license as the SimplyBook.me package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: simplybook-landing-pages\n"
+"POT-Creation-Date: 2026-04-08\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+# -----------------------------------------------------------------------
+# SEO META
+# -----------------------------------------------------------------------
+
+#. Page <title>
+msgctxt "meta.title"
+msgid "Best Appointment Scheduling Software Compared (2026)"
+msgstr ""
+
+#. Meta description
+msgctxt "meta.description"
+msgid "Compare SimplyBook.me vs Calendly, Setmore, and Acuity Scheduling. Free plan, 40+ payment gateways, HIPAA from Standard plan. Find the right booking platform for your business."
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# HERO SECTION
+# -----------------------------------------------------------------------
+
+#. Hero — main heading (H1)
+msgctxt "hero.h1"
+msgid "Which Appointment Scheduling Software Is Right for Your Business?"
+msgstr ""
+
+#. Hero — subtitle paragraph
+msgctxt "hero.subtitle"
+msgid "We compared SimplyBook.me, Calendly, Setmore, and Acuity Scheduling side by side across pricing, features, payment gateways, and compliance."
+msgstr ""
+
+#. Hero — data verification note
+msgctxt "hero.disclosure"
+msgid "All data verified April 2026."
+msgstr ""
+
+#. Hero — primary CTA button
+msgctxt "hero.cta.primary"
+msgid "Start Free - No Credit Card Required"
+msgstr ""
+
+#. Hero — secondary CTA button
+msgctxt "hero.cta.secondary"
+msgid "Jump to Comparison →"
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# SECTION 1: WHAT TO LOOK FOR
+# -----------------------------------------------------------------------
+
+#. Section heading (H2)
+msgctxt "intro.h2"
+msgid "What to Look for in Appointment Scheduling Software"
+msgstr ""
+
+#. Intro paragraph 1
+msgctxt "intro.p1"
+msgid "The appointment scheduling market has never been more crowded. Calendly dominates meeting-scheduling for sales teams. Acuity Scheduling is a long-standing choice for service businesses. Setmore appeals to solo operators with its generous free plan. SimplyBook.me offers the most feature-complete option for service businesses - with 40+ payment gateways, HIPAA compliance from the Standard plan, a built-in loyalty program, and a branded client app."
+msgstr ""
+
+#. Intro paragraph 2 (list lead-in)
+msgctxt "intro.p2"
+msgid "Before choosing a platform, most service businesses ask these five questions:"
+msgstr ""
+
+#. Intro — checklist item 1
+msgctxt "intro.list.item1"
+msgid "Does it have a free plan, or will I be paying from day one?"
+msgstr ""
+
+#. Intro — checklist item 2
+msgctxt "intro.list.item2"
+msgid "Can it accept payments from clients in my country?"
+msgstr ""
+
+#. Intro — checklist item 3
+msgctxt "intro.list.item3"
+msgid "Does it meet my industry's compliance requirements (HIPAA, GDPR)?"
+msgstr ""
+
+#. Intro — checklist item 4
+msgctxt "intro.list.item4"
+msgid "What happens to my bill when my team grows?"
+msgstr ""
+
+#. Intro — checklist item 5
+msgctxt "intro.list.item5"
+msgid "Does it offer revenue-generating features like memberships, packages, and gift cards?"
+msgstr ""
+
+#. Intro — CTA button
+msgctxt "intro.cta"
+msgid "Try SimplyBook.me Free"
+msgstr ""
+
+#. Highlight card 1 — heading
+msgctxt "intro.highlight1.h3"
+msgid "40+ Payment Gateways"
+msgstr ""
+
+#. Highlight card 1 — body
+msgctxt "intro.highlight1.p"
+msgid "Stripe, PayPal, Mollie, Adyen, Worldpay, Alipay, CCAvenue, and dozens of regional processors. Accept bookings from clients anywhere in the world."
+msgstr ""
+
+#. Highlight card 2 — heading
+msgctxt "intro.highlight2.h3"
+msgid "HIPAA from Standard Plan"
+msgstr ""
+
+#. Highlight card 2 — body
+msgctxt "intro.highlight2.p"
+msgid "HIPAA BAA capability at €24.90/month annually - not locked behind the most expensive tier. ISO 27001 certified (recertified 2024)."
+msgstr ""
+
+#. Highlight card 3 — heading
+msgctxt "intro.highlight3.h3"
+msgid "Built-in Loyalty Program"
+msgstr ""
+
+#. Highlight card 3 — body
+msgctxt "intro.highlight3.p"
+msgid "Points-based rewards system, memberships, multi-session packages, and gift cards - all included on paid plans to help you grow revenue."
+msgstr ""
+
+#. Highlight card 4 — heading
+msgctxt "intro.highlight4.h3"
+msgid "Branded Client App"
+msgstr ""
+
+#. Highlight card 4 — body
+msgctxt "intro.highlight4.p"
+msgid "Your own white-labeled booking app for clients, available from the Standard plan. None of the other platforms here offer this."
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# SECTION 2: FEATURE COMPARISON TABLE
+# -----------------------------------------------------------------------
+
+#. Section heading (H2)
+msgctxt "comparison.h2"
+msgid "SimplyBook.me vs Calendly vs Setmore vs Acuity: Feature Breakdown"
+msgstr ""
+
+#. Section subheading
+msgctxt "comparison.subtitle"
+msgid "Here is how the four platforms compare across the features that matter most for service businesses."
+msgstr ""
+
+#. Table — column headers
+msgctxt "comparison.table.col.feature"
+msgid "Feature"
+msgstr ""
+
+msgctxt "comparison.table.col.simplybook"
+msgid "SimplyBook.me"
+msgstr ""
+
+msgctxt "comparison.table.col.calendly"
+msgid "Calendly"
+msgstr ""
+
+msgctxt "comparison.table.col.setmore"
+msgid "Setmore"
+msgstr ""
+
+msgctxt "comparison.table.col.acuity"
+msgid "Acuity"
+msgstr ""
+
+#. Table — row: Free plan
+msgctxt "comparison.table.row.free_plan"
+msgid "Free plan"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.free_plan"
+msgid "Yes (1 provider, 50 bookings/mo)"
+msgstr ""
+
+msgctxt "comparison.table.calendly.free_plan"
+msgid "Yes (1 event type only)"
+msgstr ""
+
+msgctxt "comparison.table.setmore.free_plan"
+msgid "Yes (4 users, unlimited bookings)"
+msgstr ""
+
+msgctxt "comparison.table.acuity.free_plan"
+msgid "No (7-day trial only)"
+msgstr ""
+
+#. Table — row: Starting price
+msgctxt "comparison.table.row.starting_price"
+msgid "Starting paid price (annual)"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.starting_price"
+msgid "€11.90/mo"
+msgstr ""
+
+msgctxt "comparison.table.calendly.starting_price"
+msgid "$10/seat/mo"
+msgstr ""
+
+msgctxt "comparison.table.setmore.starting_price"
+msgid "$5/user/mo"
+msgstr ""
+
+msgctxt "comparison.table.acuity.starting_price"
+msgid "$16/mo"
+msgstr ""
+
+#. Table — row: Pricing model
+msgctxt "comparison.table.row.pricing_model"
+msgid "Pricing model"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.pricing_model"
+msgid "Per booking volume"
+msgstr ""
+
+msgctxt "comparison.table.calendly.pricing_model"
+msgid "Per seat"
+msgstr ""
+
+msgctxt "comparison.table.setmore.pricing_model"
+msgid "Per user"
+msgstr ""
+
+msgctxt "comparison.table.acuity.pricing_model"
+msgid "Per calendar"
+msgstr ""
+
+#. Table — row: Online booking page
+msgctxt "comparison.table.row.booking_page"
+msgid "Online booking page"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.booking_page"
+msgid "Fully customizable"
+msgstr ""
+
+#. Table — row: Payment gateways
+msgctxt "comparison.table.row.payment_gateways"
+msgid "Payment gateways"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.payment_gateways"
+msgid "40+ worldwide"
+msgstr ""
+
+msgctxt "comparison.table.calendly.payment_gateways"
+msgid "Stripe + PayPal only"
+msgstr ""
+
+msgctxt "comparison.table.setmore.payment_gateways"
+msgid "Stripe, Square, PayPal"
+msgstr ""
+
+msgctxt "comparison.table.acuity.payment_gateways"
+msgid "Stripe, Square, PayPal"
+msgstr ""
+
+#. Table — row: Deposits
+msgctxt "comparison.table.row.deposits"
+msgid "Deposits at booking"
+msgstr ""
+
+msgctxt "comparison.table.setmore.deposits"
+msgid "Pro plan+"
+msgstr ""
+
+#. Table — row: Memberships
+msgctxt "comparison.table.row.memberships"
+msgid "Memberships"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.memberships"
+msgid "All paid plans"
+msgstr ""
+
+msgctxt "comparison.table.acuity.memberships"
+msgid "Standard plan+ ($27+/mo)"
+msgstr ""
+
+#. Table — row: Packages
+msgctxt "comparison.table.row.packages"
+msgid "Packages (multi-session)"
+msgstr ""
+
+msgctxt "comparison.table.acuity.packages"
+msgid "Standard plan+ ($27+/mo)"
+msgstr ""
+
+#. Table — row: Gift cards
+msgctxt "comparison.table.row.gift_cards"
+msgid "Gift cards"
+msgstr ""
+
+msgctxt "comparison.table.acuity.gift_cards"
+msgid "Standard plan+ ($27+/mo)"
+msgstr ""
+
+#. Table — row: Loyalty program
+msgctxt "comparison.table.row.loyalty"
+msgid "Loyalty / rewards program"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.loyalty"
+msgid "Built-in points system"
+msgstr ""
+
+msgctxt "comparison.table.acuity.loyalty"
+msgid "Not confirmed"
+msgstr ""
+
+#. Table — row: Intake forms
+msgctxt "comparison.table.row.intake_forms"
+msgid "Intake forms"
+msgstr ""
+
+msgctxt "comparison.table.calendly.intake_forms"
+msgid "Yes (all plans)"
+msgstr ""
+
+msgctxt "comparison.table.setmore.intake_forms"
+msgid "Not confirmed"
+msgstr ""
+
+msgctxt "comparison.table.acuity.intake_forms"
+msgid "Yes (all plans)"
+msgstr ""
+
+#. Table — row: SMS reminders
+msgctxt "comparison.table.row.sms"
+msgid "SMS reminders"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.sms"
+msgid "Add-on ($8/100 credits)"
+msgstr ""
+
+msgctxt "comparison.table.calendly.sms"
+msgid "Standard+ ($10+/seat/mo)"
+msgstr ""
+
+msgctxt "comparison.table.setmore.sms"
+msgid "Pro plan+ only"
+msgstr ""
+
+msgctxt "comparison.table.acuity.sms"
+msgid "Standard plan+ ($27+/mo)"
+msgstr ""
+
+#. Table — row: HIPAA
+msgctxt "comparison.table.row.hipaa"
+msgid "HIPAA compliance"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.hipaa"
+msgid "Standard plan+ (€24.90/mo annual)"
+msgstr ""
+
+msgctxt "comparison.table.calendly.hipaa"
+msgid "Explicitly refuses BAAs"
+msgstr ""
+
+msgctxt "comparison.table.setmore.hipaa"
+msgid "Pro/Team + Setmore Health add-on"
+msgstr ""
+
+msgctxt "comparison.table.acuity.hipaa"
+msgid "Premium only ($49/mo annual)"
+msgstr ""
+
+#. Table — row: ISO 27001
+msgctxt "comparison.table.row.iso27001"
+msgid "ISO 27001 certified"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.iso27001"
+msgid "Yes (recertified 2024)"
+msgstr ""
+
+msgctxt "comparison.table.calendly.iso27001"
+msgid "Not listed"
+msgstr ""
+
+msgctxt "comparison.table.acuity.iso27001"
+msgid "Not listed"
+msgstr ""
+
+#. Table — row: SAML SSO
+msgctxt "comparison.table.row.sso"
+msgid "SAML SSO"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.sso"
+msgid "Standard plan+"
+msgstr ""
+
+msgctxt "comparison.table.calendly.sso"
+msgid "Teams plan (add-on)"
+msgstr ""
+
+msgctxt "comparison.table.setmore.sso"
+msgid "Not listed"
+msgstr ""
+
+msgctxt "comparison.table.acuity.sso"
+msgid "Not listed"
+msgstr ""
+
+#. Table — row: Google Reserve
+msgctxt "comparison.table.row.google_reserve"
+msgid "Google Reserve"
+msgstr ""
+
+msgctxt "comparison.table.calendly.google_reserve"
+msgid "Not confirmed"
+msgstr ""
+
+msgctxt "comparison.table.acuity.google_reserve"
+msgid "Not listed"
+msgstr ""
+
+#. Table — row: Facebook & Instagram
+msgctxt "comparison.table.row.social_booking"
+msgid "Facebook & Instagram booking"
+msgstr ""
+
+msgctxt "comparison.table.calendly.social_booking"
+msgid "Not confirmed"
+msgstr ""
+
+#. Table — row: AI Voice Booking
+msgctxt "comparison.table.row.ai_voice"
+msgid "AI Voice Booking"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.ai_voice"
+msgid "Available as add-on"
+msgstr ""
+
+#. Table — row: Branded client app
+msgctxt "comparison.table.row.client_app"
+msgid "Branded client app"
+msgstr ""
+
+msgctxt "comparison.table.acuity.client_app"
+msgid "No (Acuity-branded only)"
+msgstr ""
+
+#. Table — row: Waiting list
+msgctxt "comparison.table.row.waiting_list"
+msgid "Waiting list"
+msgstr ""
+
+msgctxt "comparison.table.setmore.waiting_list"
+msgid "Not listed"
+msgstr ""
+
+msgctxt "comparison.table.acuity.waiting_list"
+msgid "Not listed"
+msgstr ""
+
+#. Table — row: Built-in POS
+msgctxt "comparison.table.row.pos"
+msgid "Built-in POS"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.pos"
+msgid "Basic plan+"
+msgstr ""
+
+msgctxt "comparison.table.setmore.pos"
+msgid "Mobile cash register"
+msgstr ""
+
+msgctxt "comparison.table.acuity.pos"
+msgid "Yes (Tap to Pay)"
+msgstr ""
+
+#. Table — row: Recurring appointments
+msgctxt "comparison.table.row.recurring"
+msgid "Recurring appointments"
+msgstr ""
+
+msgctxt "comparison.table.calendly.recurring"
+msgid "No (highly requested, unimplemented)"
+msgstr ""
+
+msgctxt "comparison.table.setmore.recurring"
+msgid "Pro plan+"
+msgstr ""
+
+#. Table — row: Group bookings
+msgctxt "comparison.table.row.group_bookings"
+msgid "Group bookings / classes"
+msgstr ""
+
+#. Table — row: Unlimited bookings
+msgctxt "comparison.table.row.unlimited_bookings"
+msgid "Unlimited bookings"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.unlimited_bookings"
+msgid "Capped per plan tier"
+msgstr ""
+
+msgctxt "comparison.table.calendly.unlimited_bookings"
+msgid "All plans"
+msgstr ""
+
+msgctxt "comparison.table.setmore.unlimited_bookings"
+msgid "Paid plans"
+msgstr ""
+
+msgctxt "comparison.table.acuity.unlimited_bookings"
+msgid "All plans"
+msgstr ""
+
+#. Table — row: Video conferencing
+msgctxt "comparison.table.row.video"
+msgid "Video conferencing"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.video"
+msgid "Zoom, Google Meet, Gruveo"
+msgstr ""
+
+msgctxt "comparison.table.calendly.video"
+msgid "Zoom, Meet, Teams, Webex"
+msgstr ""
+
+msgctxt "comparison.table.setmore.video"
+msgid "Google Meet, Zoom"
+msgstr ""
+
+msgctxt "comparison.table.acuity.video"
+msgid "Zoom, Google Meet, GoToMeeting, JoinMe"
+msgstr ""
+
+#. Table — row: Zapier
+msgctxt "comparison.table.row.zapier"
+msgid "Zapier integrations"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.zapier"
+msgid "Available"
+msgstr ""
+
+msgctxt "comparison.table.calendly.zapier"
+msgid "500+ all plans"
+msgstr ""
+
+msgctxt "comparison.table.setmore.zapier"
+msgid "8,000+ apps"
+msgstr ""
+
+msgctxt "comparison.table.acuity.zapier"
+msgid "500+ all plans"
+msgstr ""
+
+#. Table — row: API access
+msgctxt "comparison.table.row.api"
+msgid "API access"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.api"
+msgid "Yes (high-load on Enterprise)"
+msgstr ""
+
+msgctxt "comparison.table.calendly.api"
+msgid "Standard+"
+msgstr ""
+
+msgctxt "comparison.table.setmore.api"
+msgid "Available"
+msgstr ""
+
+msgctxt "comparison.table.acuity.api"
+msgid "Premium plan only ($49+/mo)"
+msgstr ""
+
+#. Table — row: White-label
+msgctxt "comparison.table.row.whitelabel"
+msgid "White-label"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.whitelabel"
+msgid "Premium & Enterprise plans"
+msgstr ""
+
+msgctxt "comparison.table.setmore.whitelabel"
+msgid "Pro plan+ (branding removal only)"
+msgstr ""
+
+msgctxt "comparison.table.acuity.whitelabel"
+msgid "Premium only (branding removal only)"
+msgstr ""
+
+#. Table — row: Email marketing
+msgctxt "comparison.table.row.email_marketing"
+msgid "Email marketing"
+msgstr ""
+
+msgctxt "comparison.table.simplybook.email_marketing"
+msgid "Built-in campaign feature"
+msgstr ""
+
+msgctxt "comparison.table.calendly.email_marketing"
+msgid "HubSpot, Salesforce + others natively"
+msgstr ""
+
+msgctxt "comparison.table.setmore.email_marketing"
+msgid "Via Zapier (Mailchimp, MailerLite)"
+msgstr ""
+
+msgctxt "comparison.table.acuity.email_marketing"
+msgid "Mailchimp, ActiveCampaign, ConvertKit, AWeber, Drip, Constant Contact"
+msgstr ""
+
+#. Table — shared Yes/No values
+msgctxt "comparison.table.value.yes"
+msgid "Yes"
+msgstr ""
+
+msgctxt "comparison.table.value.no"
+msgid "No"
+msgstr ""
+
+msgctxt "comparison.table.value.not_available"
+msgid "Not available"
+msgstr ""
+
+msgctxt "comparison.table.value.not_listed"
+msgid "Not listed"
+msgstr ""
+
+msgctxt "comparison.table.value.not_confirmed"
+msgid "Not confirmed"
+msgstr ""
+
+#. Table — footnote
+msgctxt "comparison.table.footnote"
+msgid "Feature data verified April 2026. \"Not listed\" means the feature was not found on the vendor's public pricing or features page as of this date."
+msgstr ""
+
+#. Table — CTA button
+msgctxt "comparison.cta"
+msgid "Try SimplyBook.me Free for 14 Days"
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# SECTION 3: PRICING COMPARISON
+# -----------------------------------------------------------------------
+
+#. Section heading (H2)
+msgctxt "pricing.h2"
+msgid "Pricing Comparison: Four Different Billing Models"
+msgstr ""
+
+#. Section subheading
+msgctxt "pricing.subtitle"
+msgid "The pricing models across these platforms are fundamentally different. SimplyBook.me charges by booking volume - not headcount. Calendly and Setmore charge per user. Acuity charges per calendar (staff member)."
+msgstr ""
+
+#. Pricing block headings
+msgctxt "pricing.simplybook.heading"
+msgid "SimplyBook.me"
+msgstr ""
+
+msgctxt "pricing.simplybook.billing_note"
+msgid "(EUR, per business)"
+msgstr ""
+
+msgctxt "pricing.calendly.heading"
+msgid "Calendly"
+msgstr ""
+
+msgctxt "pricing.calendly.billing_note"
+msgid "(USD, per seat)"
+msgstr ""
+
+msgctxt "pricing.setmore.heading"
+msgid "Setmore"
+msgstr ""
+
+msgctxt "pricing.setmore.billing_note"
+msgid "(USD, per user)"
+msgstr ""
+
+msgctxt "pricing.acuity.heading"
+msgid "Acuity Scheduling"
+msgstr ""
+
+msgctxt "pricing.acuity.billing_note"
+msgid "(USD, per business)"
+msgstr ""
+
+#. Pricing table column headers (shared)
+msgctxt "pricing.table.col.plan"
+msgid "Plan"
+msgstr ""
+
+msgctxt "pricing.table.col.monthly"
+msgid "Monthly"
+msgstr ""
+
+msgctxt "pricing.table.col.annual"
+msgid "Annual/mo"
+msgstr ""
+
+msgctxt "pricing.table.col.providers"
+msgid "Providers"
+msgstr ""
+
+msgctxt "pricing.table.col.bookings"
+msgid "Bookings/mo"
+msgstr ""
+
+msgctxt "pricing.table.col.key_restriction"
+msgid "Key restriction"
+msgstr ""
+
+msgctxt "pricing.table.col.users"
+msgid "Users"
+msgstr ""
+
+msgctxt "pricing.table.col.calendars"
+msgid "Calendars"
+msgstr ""
+
+msgctxt "pricing.table.col.bookings_col"
+msgid "Bookings"
+msgstr ""
+
+#. SimplyBook.me plan names and pricing
+msgctxt "pricing.simplybook.plan.free"
+msgid "Free"
+msgstr ""
+
+msgctxt "pricing.simplybook.plan.basic"
+msgid "Basic"
+msgstr ""
+
+msgctxt "pricing.simplybook.plan.standard"
+msgid "Standard"
+msgstr ""
+
+msgctxt "pricing.simplybook.plan.premium"
+msgid "Premium"
+msgstr ""
+
+#. Calendly plan names and restrictions
+msgctxt "pricing.calendly.plan.free"
+msgid "Free"
+msgstr ""
+
+msgctxt "pricing.calendly.plan.standard"
+msgid "Standard"
+msgstr ""
+
+msgctxt "pricing.calendly.restriction.standard"
+msgid "No Salesforce, no CRM routing"
+msgstr ""
+
+msgctxt "pricing.calendly.plan.teams"
+msgid "Teams"
+msgstr ""
+
+msgctxt "pricing.calendly.restriction.teams"
+msgid "SSO is an add-on"
+msgstr ""
+
+msgctxt "pricing.calendly.plan.enterprise"
+msgid "Enterprise"
+msgstr ""
+
+msgctxt "pricing.calendly.price.enterprise_monthly"
+msgid "Custom"
+msgstr ""
+
+msgctxt "pricing.calendly.price.enterprise_annual"
+msgid "From $15,000/yr"
+msgstr ""
+
+msgctxt "pricing.calendly.restriction.enterprise"
+msgid "Sales call required"
+msgstr ""
+
+msgctxt "pricing.calendly.restriction.free"
+msgid "1 active event type only"
+msgstr ""
+
+#. Setmore plan names
+msgctxt "pricing.setmore.plan.free"
+msgid "Free"
+msgstr ""
+
+msgctxt "pricing.setmore.plan.pro"
+msgid "Pro"
+msgstr ""
+
+msgctxt "pricing.setmore.plan.team"
+msgid "Team"
+msgstr ""
+
+msgctxt "pricing.setmore.users.free"
+msgid "Up to 4"
+msgstr ""
+
+msgctxt "pricing.setmore.users.pro"
+msgid "1–4 users"
+msgstr ""
+
+msgctxt "pricing.setmore.users.team"
+msgid "Unlimited"
+msgstr ""
+
+msgctxt "pricing.setmore.bookings"
+msgid "Unlimited"
+msgstr ""
+
+#. Acuity plan names
+msgctxt "pricing.acuity.plan.starter"
+msgid "Starter"
+msgstr ""
+
+msgctxt "pricing.acuity.plan.standard"
+msgid "Standard"
+msgstr ""
+
+msgctxt "pricing.acuity.plan.premium"
+msgid "Premium"
+msgstr ""
+
+msgctxt "pricing.acuity.calendars.starter"
+msgid "1"
+msgstr ""
+
+msgctxt "pricing.acuity.calendars.standard"
+msgid "Up to 6"
+msgstr ""
+
+msgctxt "pricing.acuity.calendars.premium"
+msgid "Up to 36"
+msgstr ""
+
+msgctxt "pricing.acuity.bookings"
+msgid "Unlimited"
+msgstr ""
+
+#. Pricing footnotes
+msgctxt "pricing.simplybook.note"
+msgid "Free plan, no credit card required. 14-day free trial on paid plans."
+msgstr ""
+
+msgctxt "pricing.calendly.note"
+msgid "A 20-person team on Teams plan = $320–$400/month."
+msgstr ""
+
+msgctxt "pricing.setmore.note"
+msgid "Payments require Pro plan and above."
+msgstr ""
+
+msgctxt "pricing.acuity.note"
+msgid "No free plan. 7-day free trial only."
+msgstr ""
+
+#. Pricing callout box
+msgctxt "pricing.callout.h3"
+msgid "What the Pricing Model Means for Your Team"
+msgstr ""
+
+msgctxt "pricing.callout.p"
+msgid "Consider a business with 6 staff members. On Acuity, you need the Standard plan at $27/month for 6 calendars. On Calendly Teams, 6 seats cost $96/month annually. On Setmore Pro, 6 users cost $30/month annually. On SimplyBook.me, the Standard plan at €24.90/month supports up to 15 providers - adding team members doesn't multiply your bill. The tradeoff: SimplyBook.me caps bookings per plan tier, while Acuity and Setmore offer unlimited bookings on paid plans."
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# SECTION 4: WHICH TOOL IS RIGHT FOR YOU
+# -----------------------------------------------------------------------
+
+#. Section heading (H2)
+msgctxt "which_tool.h2"
+msgid "Which Appointment Scheduling Platform Is Right for Your Business?"
+msgstr ""
+
+#. SimplyBook.me card
+msgctxt "which_tool.simplybook.eyebrow"
+msgid "SimplyBook.me"
+msgstr ""
+
+msgctxt "which_tool.simplybook.h3"
+msgid "Best for service businesses that want to grow revenue"
+msgstr ""
+
+msgctxt "which_tool.simplybook.desc"
+msgid "Salons, spas, wellness studios, healthcare providers, tutors, and any business needing payment flexibility, compliance, or revenue tools like memberships and loyalty programs. The only platform here with 40+ payment gateways and HIPAA compliance below the top pricing tier."
+msgstr ""
+
+msgctxt "which_tool.simplybook.cta"
+msgid "Start free →"
+msgstr ""
+
+#. Calendly card
+msgctxt "which_tool.calendly.eyebrow"
+msgid "Calendly"
+msgstr ""
+
+msgctxt "which_tool.calendly.h3"
+msgid "Best for sales teams and professional scheduling"
+msgstr ""
+
+msgctxt "which_tool.calendly.desc"
+msgid "Sales teams, recruiters, consultants, and SaaS companies managing meeting scheduling with CRM automation. Not designed for service businesses collecting payments, managing staff, or requiring HIPAA compliance."
+msgstr ""
+
+msgctxt "which_tool.calendly.cta"
+msgid "Compare →"
+msgstr ""
+
+#. Setmore card
+msgctxt "which_tool.setmore.eyebrow"
+msgid "Setmore"
+msgstr ""
+
+msgctxt "which_tool.setmore.h3"
+msgid "Best for solopreneurs on a tight budget"
+msgstr ""
+
+msgctxt "which_tool.setmore.desc"
+msgid "Solo practitioners and very small teams needing a free or near-free solution. Strong free plan with 4 users and unlimited bookings. No native memberships, packages, gift cards, or loyalty program."
+msgstr ""
+
+msgctxt "which_tool.setmore.cta"
+msgid "Compare →"
+msgstr ""
+
+#. Acuity card
+msgctxt "which_tool.acuity.eyebrow"
+msgid "Acuity Scheduling"
+msgstr ""
+
+msgctxt "which_tool.acuity.h3"
+msgid "Best for Squarespace users needing reliable scheduling"
+msgstr ""
+
+msgctxt "which_tool.acuity.desc"
+msgid "Established service businesses in the Squarespace ecosystem needing solid scheduling and strong email marketing integrations. Unlimited bookings on all plans is a genuine advantage for high-volume businesses."
+msgstr ""
+
+msgctxt "which_tool.acuity.cta"
+msgid "Compare →"
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# SECTION 5: THIRD-PARTY REVIEW SCORES
+# -----------------------------------------------------------------------
+
+#. Section heading (H2)
+msgctxt "reviews.h2"
+msgid "Third-Party Review Scores (April 2026)"
+msgstr ""
+
+#. Table — column headers
+msgctxt "reviews.table.col.platform"
+msgid "Platform"
+msgstr ""
+
+#. Table — row labels (review platforms)
+msgctxt "reviews.table.row.capterra"
+msgid "Capterra"
+msgstr ""
+
+msgctxt "reviews.table.row.trustpilot"
+msgid "Trustpilot"
+msgstr ""
+
+msgctxt "reviews.table.row.g2"
+msgid "G2"
+msgstr ""
+
+#. Review scores — Capterra
+msgctxt "reviews.capterra.simplybook"
+msgid "4.6/5 (1,281 reviews)"
+msgstr ""
+
+msgctxt "reviews.capterra.calendly"
+msgid "4.7/5 (4,082 reviews)"
+msgstr ""
+
+msgctxt "reviews.capterra.setmore"
+msgid "4.6/5 (958 reviews)"
+msgstr ""
+
+msgctxt "reviews.capterra.acuity"
+msgid "4.8/5 (5,740 reviews)"
+msgstr ""
+
+#. Review scores — Trustpilot
+msgctxt "reviews.trustpilot.simplybook"
+msgid "4.4/5 (764 reviews)"
+msgstr ""
+
+msgctxt "reviews.trustpilot.calendly"
+msgid "2.9/5 (464 reviews)"
+msgstr ""
+
+msgctxt "reviews.trustpilot.setmore"
+msgid "4.9/5 (3,093 reviews)"
+msgstr ""
+
+msgctxt "reviews.trustpilot.acuity"
+msgid "3.7/5 (432 reviews)"
+msgstr ""
+
+#. Review scores — G2
+msgctxt "reviews.g2.simplybook"
+msgid "4.4/5 (118 reviews)"
+msgstr ""
+
+msgctxt "reviews.g2.calendly"
+msgid "4.7/5 (2,615 reviews)"
+msgstr ""
+
+msgctxt "reviews.g2.setmore"
+msgid "4.5/5 (268 reviews)"
+msgstr ""
+
+msgctxt "reviews.g2.acuity"
+msgid "4.6/5 (~407 reviews)"
+msgstr ""
+
+#. Sources note
+msgctxt "reviews.sources_note"
+msgid "Sources: capterra.com, trustpilot.com, g2.com. Verified April 2026."
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# SECTION 6: READY TO MAKE THE SWITCH
+# -----------------------------------------------------------------------
+
+#. Section heading (H2)
+msgctxt "switch.h2"
+msgid "Ready to Make the Switch?"
+msgstr ""
+
+#. Body paragraph
+msgctxt "switch.p"
+msgid "Our team will handle the entire migration for you. We'll import your clients, configure your services, and get your booking page live. Book a call and we'll take care of the rest."
+msgstr ""
+
+#. Bullet points
+msgctxt "switch.point1"
+msgid "Free migration assistance"
+msgstr ""
+
+msgctxt "switch.point2"
+msgid "No credit card required to start"
+msgstr ""
+
+msgctxt "switch.point3"
+msgid "Live in under 15 minutes"
+msgstr ""
+
+#. CTA card — label
+msgctxt "switch.cta.label"
+msgid "Get started today"
+msgstr ""
+
+#. CTA card — heading
+msgctxt "switch.cta.h3"
+msgid "Talk to our team"
+msgstr ""
+
+#. CTA card — description
+msgctxt "switch.cta.desc"
+msgid "We'll walk you through setup and handle your migration from start to finish."
+msgstr ""
+
+#. CTA card — primary button
+msgctxt "switch.cta.button"
+msgid "Book a Call With Our Team"
+msgstr ""
+
+#. CTA card — secondary note
+msgctxt "switch.cta.note"
+msgid "Or %start_free_link%start your free plan%end_link% and explore on your own."
+msgstr ""
+
+msgctxt "switch.cta.note.free_plan_link"
+msgid "start your free plan"
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# FAQ
+# -----------------------------------------------------------------------
+
+#. Section heading (H2)
+msgctxt "faq.h2"
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#. FAQ item 1
+msgctxt "faq.q1"
+msgid "Which scheduling software has the best free plan?"
+msgstr ""
+
+msgctxt "faq.a1"
+msgid "Setmore and SimplyBook.me both offer permanent free plans. Setmore's free plan supports up to 4 users with unlimited bookings, but lacks SMS reminders, recurring appointments, and payment processing. SimplyBook.me's free plan supports 1 provider and 50 bookings per month with access to one custom feature. Calendly's free plan allows only a single active event type. Acuity Scheduling has no free plan - only a 7-day trial."
+msgstr ""
+
+#. FAQ item 2
+msgctxt "faq.q2"
+msgid "Is SimplyBook.me better than Calendly for service businesses?"
+msgstr ""
+
+msgctxt "faq.a2"
+msgid "For most service businesses, yes. Calendly is built for meeting scheduling and sales workflows, not service businesses managing payments, staff, and client retention. It explicitly refuses HIPAA BAAs, does not support recurring appointments, and offers only Stripe and PayPal for payments. SimplyBook.me supports 40+ payment gateways, HIPAA from the Standard plan, memberships, packages, loyalty programs, and a branded client app - none of which Calendly offers (as of April 2026)."
+msgstr ""
+
+#. FAQ item 3
+msgctxt "faq.q3"
+msgid "How does Calendly's per-seat pricing compare to SimplyBook.me?"
+msgstr ""
+
+msgctxt "faq.a3"
+msgid "Calendly charges per seat - a 10-person team on Teams plan costs $160/month annually. SimplyBook.me charges by booking volume, not headcount. The Standard plan at €24.90/month supports up to 15 providers with 500 bookings per month. Adding team members to SimplyBook.me doesn't increase your bill."
+msgstr ""
+
+#. FAQ item 4
+msgctxt "faq.q4"
+msgid "Which scheduling software is HIPAA compliant?"
+msgstr ""
+
+msgctxt "faq.a4"
+msgid "SimplyBook.me includes HIPAA BAA capability on the Standard plan (€24.90/month annual). Acuity requires its Premium plan ($49/month annual). Setmore offers HIPAA compliance via the Setmore Health add-on on Pro or Team plans, though several features are disabled to maintain compliance. Calendly explicitly refuses to sign Business Associate Agreements - making it unsuitable for covered healthcare entities (as of April 2026)."
+msgstr ""
+
+#. FAQ item 5
+msgctxt "faq.q5"
+msgid "Does SimplyBook.me support memberships and packages?"
+msgstr ""
+
+msgctxt "faq.a5"
+msgid "Yes. SimplyBook.me supports memberships with recurring billing and multi-session packages on all paid plans. These features are not available on Calendly or Setmore. On Acuity, memberships, packages, and gift certificates require the Standard plan at $27/month or above."
+msgstr ""
+
+#. FAQ item 6
+msgctxt "faq.q6"
+msgid "Which scheduling platform has the most payment gateways?"
+msgstr ""
+
+msgctxt "faq.a6"
+msgid "SimplyBook.me supports 40+ payment gateways including Stripe, PayPal, Square, Mollie, Adyen, Worldpay, Alipay, CCAvenue, and dozens of regional processors. Acuity and Setmore support Stripe, Square, and PayPal only. Calendly supports Stripe and PayPal only. If your business operates outside markets where those three processors dominate, SimplyBook.me is the only option here with meaningful global gateway coverage."
+msgstr ""
+
+#. FAQ item 7
+msgctxt "faq.q7"
+msgid "Can I migrate from Calendly, Setmore, or Acuity to SimplyBook.me?"
+msgstr ""
+
+msgctxt "faq.a7"
+msgid "Yes. Export your client list from your current platform as a CSV and import it directly into SimplyBook.me. Services, staff, and availability can be configured through the AI setup assistant. For a fully assisted migration, book a call with the SimplyBook.me team."
+msgstr ""
+
+#. FAQ item 8
+msgctxt "faq.q8"
+msgid "What does Acuity Scheduling do better than SimplyBook.me?"
+msgstr ""
+
+msgctxt "faq.a8"
+msgid "Acuity offers unlimited bookings on all plans (SimplyBook.me caps bookings by tier), built-in invoicing, strong email marketing integrations (Mailchimp, ActiveCampaign, ConvertKit, and 5 others), and 4 native video conferencing integrations. These are genuine strengths for businesses with high booking volume, invoicing workflows, or tight email marketing automation needs (as of April 2026)."
+msgstr ""
+
+
+# -----------------------------------------------------------------------
+# TRADEMARK / LEGAL NOTICE
+# -----------------------------------------------------------------------
+
+#. Trademark disclaimer at page bottom
+msgctxt "legal.trademark"
+msgid "Information on this page was last verified on April 6, 2026. Competitor features and pricing may have changed since this date. All product names, logos, and brands are property of their respective owners. Use of these names does not imply any affiliation with or endorsement by those companies."
+msgstr ""
