@@ -1013,10 +1013,9 @@
     }
 
     .switch-inner {
-      display: grid;
-      grid-template-columns: 1fr 360px;
-      gap: 80px;
-      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
       position: relative;
     }
 
@@ -1081,12 +1080,10 @@
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 16px;
-      padding: 48px 40px;
-      text-align: center;
+      padding: 36px 48px;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      gap: 16px;
+      gap: 40px;
     }
 
     .switch-cta-label {
@@ -1100,10 +1097,11 @@
     }
 
     .switch-cta-desc {
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.55);
-      line-height: 1.6;
-      margin-bottom: 8px;
+      flex: 1;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 1.7;
+      margin: 0;
     }
 
     .switch-cta .btn--primary {
@@ -1417,9 +1415,11 @@
         grid-template-columns: 1fr;
       }
 
-      .switch-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
+      .switch-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 28px 32px;
       }
 
       .footer-grid {
