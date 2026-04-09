@@ -1,0 +1,60 @@
+<section class="cp-highlights section">
+    <div class="container">
+        <header class="cp-highlights__header">
+            <h2 class="title title--h2">{{ 'What to Look for in Appointment Scheduling Software'|trans }}</h2>
+            <p class="p">{{ 'The appointment scheduling market has never been more crowded. Calendly dominates meeting-scheduling for sales teams. Acuity Scheduling is a long-standing choice for service businesses. Setmore appeals to solo operators with its generous free plan. SimplyBook.me offers the most feature-complete option for service businesses — with 40+ payment gateways, HIPAA compliance from the Standard plan, a built-in loyalty program, and a branded client app.'|trans }}</p>
+        </header>
+
+        <div class="cp-highlights__intro">
+            <p class="p p--bold">{{ 'Before choosing a platform, most service businesses ask these five questions:'|trans }}</p>
+            <ul class="cp-highlights__questions">
+                <li>{{ 'Does it have a free plan, or will I be paying from day one?'|trans }}</li>
+                <li>{{ 'Can it accept payments from clients in my country?'|trans }}</li>
+                <li>{{ "Does it meet my industry's compliance requirements (HIPAA, GDPR)?"|trans }}</li>
+                <li>{{ 'What happens to my bill when my team grows?'|trans }}</li>
+                <li>{{ 'Does it offer revenue-generating features like memberships, packages, and gift cards?'|trans }}</li>
+            </ul>
+        </div>
+
+        <div class="cp-highlights__cards">
+            <div class="cp-highlights__card">
+                <div class="cp-highlights__card-icon" aria-hidden="true">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="title title--h3">{{ '40+ Payment Gateways'|trans }}</h3>
+                <p class="p p--secondary p--small">{{ 'Stripe, PayPal, Mollie, Adyen, Worldpay, Alipay, CCAvenue, and dozens of regional processors. Accept bookings from clients anywhere in the world.'|trans }}</p>
+            </div>
+            <div class="cp-highlights__card">
+                <div class="cp-highlights__card-icon" aria-hidden="true">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="title title--h3">{{ 'HIPAA from Standard Plan'|trans }}</h3>
+                <p class="p p--secondary p--small">{{ 'HIPAA BAA capability at €24.90/month annually — not locked behind the most expensive tier. ISO 27001 certified (recertified 2024).'|trans }}</p>
+            </div>
+            <div class="cp-highlights__card">
+                <div class="cp-highlights__card-icon" aria-hidden="true">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3 class="title title--h3">{{ 'Built-in Loyalty Program'|trans }}</h3>
+                <p class="p p--secondary p--small">{{ 'Points-based rewards system, memberships, multi-session packages, and gift cards — all included on paid plans to help you grow revenue.'|trans }}</p>
+            </div>
+            <div class="cp-highlights__card">
+                <div class="cp-highlights__card-icon" aria-hidden="true">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="title title--h3">{{ 'Branded Client App'|trans }}</h3>
+                <p class="p p--secondary p--small">{{ 'Your own white-labeled booking app for clients, available from the Standard plan. None of the other platforms here offer this.'|trans }}</p>
+            </div>
+        </div>
+
+        <div class="cp-highlights__cta">
+            {% include '/public/static/components/partials/button.twig' with {
+                tag: 'a',
+                href: path('public.registration.get'),
+                content: 'Try SimplyBook.me Free'|trans,
+                class: 'btn--primary',
+                attributes: {'aria-label': 'Start free trial with SimplyBook.me'|trans}
+            } %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,129 @@
+{# Feature comparison data: value_1=SimplyBook.me, value_2=Calendly, value_3=Setmore, value_4=Acuity #}
+{% set en_features = [
+    { title: 'Free plan', value_1: 'Yes (1 provider, 50 bookings/mo)', value_2: 'Yes (1 event type only)', value_3: 'Yes (4 users, unlimited bookings)', value_4: 'No (7-day trial only)' },
+    { title: 'Starting paid price (annual)', value_1: '€11.90/mo', value_2: '$10/seat/mo', value_3: '$5/user/mo', value_4: '$16/mo' },
+    { title: 'Pricing model', value_1: 'Per booking volume', value_2: 'Per seat', value_3: 'Per user', value_4: 'Per calendar' },
+    { title: 'Online booking page', value_1: 'Fully customizable', value_2: true, value_3: true, value_4: true },
+    { title: 'Payment gateways', value_1: '40+ worldwide', value_2: 'Stripe + PayPal only', value_3: 'Stripe, Square, PayPal', value_4: 'Stripe, Square, PayPal' },
+    { title: 'Deposits at booking', value_1: true, value_2: false, value_3: 'Pro plan+', value_4: true },
+    { title: 'Memberships', value_1: 'All paid plans', value_2: false, value_3: false, value_4: 'Standard plan+ ($27+/mo)' },
+    { title: 'Packages (multi-session)', value_1: 'All paid plans', value_2: false, value_3: false, value_4: 'Standard plan+ ($27+/mo)' },
+    { title: 'Gift cards', value_1: true, value_2: false, value_3: false, value_4: 'Standard plan+ ($27+/mo)' },
+    { title: 'Loyalty / rewards program', value_1: 'Built-in points system', value_2: false, value_3: false, value_4: 'Not confirmed' },
+    { title: 'Intake forms', value_1: true, value_2: 'Yes (all plans)', value_3: 'Not confirmed', value_4: 'Yes (all plans)' },
+    { title: 'SMS reminders', value_1: 'Add-on ($8/100 credits)', value_2: 'Standard+ ($10+/seat/mo)', value_3: 'Pro plan+ only', value_4: 'Standard plan+ ($27+/mo)' },
+    { title: 'HIPAA compliance', value_1: 'Standard plan+ (€24.90/mo)', value_2: 'Explicitly refuses BAAs', value_3: 'Pro/Team + Health add-on', value_4: 'Premium only ($49/mo)' },
+    { title: 'ISO 27001 certified', value_1: 'Yes (recertified 2024)', value_2: 'Not listed', value_3: 'Not confirmed', value_4: 'Not listed' },
+    { title: 'SAML SSO', value_1: 'Standard plan+', value_2: 'Teams plan (add-on)', value_3: 'Not listed', value_4: 'Not listed' },
+    { title: 'Google Reserve', value_1: true, value_2: 'Not confirmed', value_3: true, value_4: 'Not listed' },
+    { title: 'Facebook & Instagram booking', value_1: true, value_2: 'Not confirmed', value_3: true, value_4: true },
+    { title: 'AI Voice Booking', value_1: 'Available as add-on', value_2: false, value_3: false, value_4: false },
+    { title: 'Branded client app', value_1: 'Standard plan+', value_2: false, value_3: false, value_4: 'No (Acuity-branded only)' },
+    { title: 'Waiting list', value_1: true, value_2: false, value_3: 'Not listed', value_4: 'Not listed' },
+    { title: 'Built-in POS', value_1: 'Basic plan+', value_2: false, value_3: 'Mobile cash register', value_4: 'Yes (Tap to Pay)' },
+    { title: 'Recurring appointments', value_1: true, value_2: false, value_3: 'Pro plan+', value_4: true },
+    { title: 'Group bookings / classes', value_1: true, value_2: true, value_3: true, value_4: true },
+    { title: 'Unlimited bookings', value_1: 'Capped per plan tier', value_2: 'All plans', value_3: 'Paid plans', value_4: 'All plans' },
+    { title: 'Video conferencing', value_1: 'Zoom, Google Meet, Gruveo', value_2: 'Zoom, Meet, Teams, Webex', value_3: 'Google Meet, Zoom', value_4: 'Zoom, Meet, GoToMeeting, JoinMe' },
+    { title: 'Zapier integrations', value_1: 'Available', value_2: '500+ all plans', value_3: '8,000+ apps', value_4: '500+ all plans' },
+    { title: 'API access', value_1: 'Yes (high-load on Enterprise)', value_2: 'Standard+', value_3: 'Available', value_4: 'Premium plan only ($49+/mo)' },
+    { title: 'White-label', value_1: 'Premium & Enterprise plans', value_2: false, value_3: 'Pro plan+ (branding removal)', value_4: 'Premium only (branding removal)' },
+    { title: 'Email marketing', value_1: 'Built-in campaign feature', value_2: 'HubSpot, Salesforce + others', value_3: 'Via Zapier', value_4: 'Mailchimp, ActiveCampaign + 4 more' }
+] %}
+
+<section class="compare-features">
+    <div class="container">
+        <header class="compare-features__header">
+            <h2 class="compare-features__header-title title title--h2 has-subtitle">{{ 'SimplyBook.me vs Calendly vs Setmore vs Acuity: Feature Breakdown'|trans }}</h2>
+            <p class="compare-features__header-subtitle p p--secondary">{{ 'Here is how the four platforms compare across the features that matter most for service businesses.'|trans }}</p>
+        </header>
+
+        <div class="cp-features-table-wrap">
+            <div class="compare-table cp-features-table">
+                {# Header row #}
+                <div class="compare-table__row compare-table__row--first">
+                    <div class="compare-table__column compare-table__column--first">
+                        <p class="compare-table__column-title title title--h3">{{ 'Feature'|trans }}</p>
+                    </div>
+                    <div class="compare-table__column compare-table__column--colored">
+                        <p class="compare-table__column-title p p--bold">SimplyBook.me</p>
+                    </div>
+                    <div class="compare-table__column">
+                        <p class="compare-table__column-title p p--bold">Calendly</p>
+                    </div>
+                    <div class="compare-table__column compare-table__column--colored">
+                        <p class="compare-table__column-title p p--bold">Setmore</p>
+                    </div>
+                    <div class="compare-table__column">
+                        <p class="compare-table__column-title p p--bold">{{ 'Acuity Scheduling'|trans }}</p>
+                    </div>
+                </div>
+
+                {# Data rows #}
+                {% for item in en_features %}
+                    <div class="compare-table__row">
+                        <div class="compare-table__column compare-table__column--first">
+                            <p class="p p--small">{{ item.title|trans }}</p>
+                        </div>
+                        {# SimplyBook.me (colored) #}
+                        <div class="compare-table__column compare-table__column--colored">
+                            {% if item.value_1 is same as(true) %}
+                                <svg class="yes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
+                            {% elseif item.value_1 is same as(false) %}
+                                <svg class="no" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z"/></svg>
+                            {% else %}
+                                <p class="compare-table__column-title p p--small">{{ item.value_1|trans }}</p>
+                            {% endif %}
+                        </div>
+                        {# Calendly #}
+                        <div class="compare-table__column">
+                            {% if item.value_2 is same as(true) %}
+                                <svg class="yes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
+                            {% elseif item.value_2 is same as(false) %}
+                                <svg class="no" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z"/></svg>
+                            {% else %}
+                                <p class="compare-table__column-title p p--small">{{ item.value_2|trans }}</p>
+                            {% endif %}
+                        </div>
+                        {# Setmore (colored) #}
+                        <div class="compare-table__column compare-table__column--colored">
+                            {% if item.value_3 is same as(true) %}
+                                <svg class="yes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
+                            {% elseif item.value_3 is same as(false) %}
+                                <svg class="no" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z"/></svg>
+                            {% else %}
+                                <p class="compare-table__column-title p p--small">{{ item.value_3|trans }}</p>
+                            {% endif %}
+                        </div>
+                        {# Acuity #}
+                        <div class="compare-table__column">
+                            {% if item.value_4 is same as(true) %}
+                                <svg class="yes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
+                            {% elseif item.value_4 is same as(false) %}
+                                <svg class="no" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z"/></svg>
+                            {% else %}
+                                <p class="compare-table__column-title p p--small">{{ item.value_4|trans }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <p class="compare-features__label p p--small p--secondary">{{ 'Feature data verified April 2026. Sources: simplybook.me, calendly.com, setmore.com, acuityscheduling.com. "Not listed" means the feature was not found on the vendor\'s public pricing or features page as of this date.'|trans }}</p>
+
+        <div class="cp-features-cta">
+            {% include '/public/static/components/partials/button.twig' with {
+                tag: 'a',
+                href: path('public.registration.get'),
+                content: 'Try SimplyBook.me Free for 14 Days'|trans,
+                class: 'btn--primary',
+                attributes: {'aria-label': 'Start your free 14-day trial'|trans}
+            } %}
+        </div>
+    </div>
+
+    <svg class="compare-features-shape" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 210.344 16.642">
+        <path stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" stroke-width=".265" d="M-.34 11.539C58.124 21.014 140.87-.549 210.684.011l.189 16.63H-.53z"></path>
+    </svg>
+</section>

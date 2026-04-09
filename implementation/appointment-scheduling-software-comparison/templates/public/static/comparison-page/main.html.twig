@@ -1,0 +1,385 @@
+{% if app.request.locale in ['en'] %}
+
+    {# ── EN: Updated comparison page (April 2026) ── #}
+    {{ include('/public/static/comparison-page/en-cover.html.twig') }}
+    {{ include('/public/static/comparison-page/en-highlights.html.twig') }}
+    {{ include('/public/static/comparison-page/en-features.html.twig') }}
+    {{ include('/public/static/comparison-page/en-pricing.html.twig') }}
+    {{ include('/public/static/comparison-page/en-platforms.html.twig') }}
+    {{ include('/public/static/comparison-page/en-reviews.html.twig') }}
+    {{ include('/public/static/comparison-page/en-cta.html.twig') }}
+    {{ include('/public/static/comparison-page/en-faq.html.twig') }}
+
+{% else %}
+
+    {# ── Non-EN: Original comparison page ── #}
+    {% include('/public/static/comparison-page/review_data.html.twig') %}
+    {% set review_data = restore('review_data') %}
+
+    <section class="compare-cover section">
+        <div class="container">
+            <article class="compare-cover__header">
+                <div class="compare-row compare-row__hero">
+                    <section class="compare-item compare-item__content">
+                        <h1 class="compare-cover__header-title title title--h1 has-subtitle">{{ '<span class="highlight">Compare</span> the best Appointment Scheduling Softwares'|trans|raw() }}</h1>
+                        <p class="compare-cover__header-subtitle p">{{ 'Don´t take our word for it - see for yourself what customers are saying about SimplyBook.me'|trans }}</p>
+                    </section>
+                    <picture class="compare-item compare-item__picture">
+                        <img width="1288" height="1028" loading="lazy" src="{{ asset('build/images/comparison-page/sb-comparison--hero.png') }}" alt="Simplybook best Appointment Scheduling Softwares"/>
+                    </picture>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="compare-features">
+        <div class="container">
+            <header class="compare-features__header">
+                <h2 class="compare-features__header-title title title--h2 has-subtitle">{{ 'Flexible & Full of Features'|trans }}</h2>
+                <p class="compare-features__header-subtitle p p--secondary">{{ 'Compare SimplyBook.me with other appointment scheduling software when it comes to what features are on the table.'|trans }}</p>
+            </header>
+
+            {% include 'public/static/comparison-page/compare-features.html.twig' %}
+        </div>
+        <svg class="compare-features-shape" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 210.344 16.642">
+            <path stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" stroke-width=".265" d="M-.34 11.539C58.124 21.014 140.87-.549 210.684.011l.189 16.63H-.53z"></path>
+        </svg>
+    </section>
+
+    <section class="compare-table-block">
+        <div class="container">
+            <ul class="compare-cover__cards">
+                <li class="compare-cover__card">
+                    <a class="compare-cover__card-link"
+                        {% if app.request.locale not in ['de'] %}
+                            href="https://www.softwareadvice.com/appointment-scheduling/simplybookme-profile/reviews/"
+                        {% endif %}
+                        {% if app.request.locale in ['de'] %}
+                            href="https://www.softwareadvice.de/software/156049/simplybookme"
+                        {% endif %}
+                       target="_blank" rel="noopener noreferrer"></a>
+                    <p class="compare-cover__card-heading p p--secondary p--small">{{ 'SimplyBook.me on'|trans }}</p>
+                    <div class="compare-cover__card-image">
+                        <img src="{{ asset('build/images/logos/software-advice.png') }}" alt="Software Adivce logo"/>
+                    </div>
+                    <div class="compare-cover__card-info">
+                        <div class="compare-cover__card-info-title compare-cover__card-info-title--image p bold"><img src="{{ asset('build/images/logos/frontrunners.png') }}" alt="Frontrunners label"/></div>
+                        <img class="compare-cover__card-info-stars" src="{{ asset('build/images/icons/stars-row-blue.svg') }}" alt="Stars icon" />
+                        <p class="compare-cover__card-info-rating highlight bold">4.6</p>
+                        <p class="compare-cover__card-info-reviews p">>1202 {{ 'reviews'|trans }}</p>
+                    </div>
+                    <div class="compare-cover__card-review">
+                        <p class="compare-cover__card-review-author p p--bold p--small">{{ 'Karie from Cre8tive'|trans }}</p>
+                        <p class="compare-cover__card-review-text p p--secondary p--small">{{ '"I love how user-friendly this software is! I found the video tutorials very helpful, and the customer service was prompt and friendly."'|trans }}</p>
+                    </div>
+                </li>
+
+                <li class="compare-cover__card">
+                    <a class="compare-cover__card-link"
+                        {% if app.request.locale not in ['de'] %}
+                            href="https://www.trustpilot.com/review/simplybook.me"
+                        {% endif %}
+                        {% if app.request.locale in ['de'] %}
+                            href="https://de.trustpilot.com/review/simplybook.me"
+                        {% endif %}
+                       target="_blank" rel="noopener noreferrer"></a>
+                    <p class="compare-cover__card-heading p p--secondary p--small">{{ 'SimplyBook.me on'|trans }}</p>
+                    <div class="compare-cover__card-image">
+                        <img src="{{ asset('build/images/logos/Trustpilot.svg') }}" alt="Trustpilot logo"/>
+                    </div>
+                    <div class="compare-cover__card-info">
+                        <div class="compare-cover__card-info-title p bold">{{ 'Excellent'|trans }}</div>
+                        <img class="compare-cover__card-info-stars" src="{{ asset('build/images/icons/stars-row-blue.svg') }}" alt="Stars icon" />
+                        <p class="compare-cover__card-info-rating highlight bold">4.5</p>
+                        <p class="compare-cover__card-info-reviews p">>519 {{ 'reviews'|trans }}</p>
+                    </div>
+                    <div class="compare-cover__card-review">
+                        <p class="compare-cover__card-review-author p p--bold p--small">{{ 'Chyna Desveaux'|trans }}</p>
+                        <p class="compare-cover__card-review-text p p--secondary p--small">{{ '"Honestly, I've been looking for a booking system that is clean, simple and easy to use that has an extensive range of custom features and SimplyBook really have hit the nail on the head with their system & have so much to offer."'|trans }}</p>
+                    </div>
+                </li>
+
+                <li class="compare-cover__card">
+                    <a class="compare-cover__card-link"
+                        {% if app.request.locale not in ['de'] %}
+                            href="https://www.capterra.com/p/140086/Simplybook-me/"
+                        {% endif %}
+                        {% if app.request.locale in ['de'] %}
+                            href="https://www.capterra.com.de/software/140086/simplybook-me"
+                        {% endif %}
+                       target="_blank" rel="noopener noreferrer"></a>
+                    <p class="compare-cover__card-heading p p--secondary p--small">{{ 'SimplyBook.me on'|trans }}</p>
+                    <div class="compare-cover__card-image">
+                        <img src="{{ asset('build/images/logos/capterra-colored.svg') }}" alt="Capterra logo"/>
+                    </div>
+                    <div class="compare-cover__card-info">
+                        <div class="compare-cover__card-info-title p bold">{{ 'Top 20 - 2020'|trans }}</div>
+                        <img class="compare-cover__card-info-stars" src="{{ asset('build/images/icons/stars-row-blue.svg') }}" alt="Stars icon" />
+                        <p class="compare-cover__card-info-rating highlight bold">4.6</p>
+                        <p class="compare-cover__card-info-reviews p">>1223 {{ 'reviews'|trans }}</p>
+                    </div>
+                    <div class="compare-cover__card-review">
+                        <p class="compare-cover__card-review-author p p--bold p--small">{{ 'Korie T.'|trans }}</p>
+                        <p class="compare-cover__card-review-text p p--secondary p--small">{{ '"My experience has been awesome! I was able to seamlessly set up my site with ease, set up my payment processor and have a beautifully designed live booking page for clients to book. I highly recommend this for small businesses and providers who accept appointments."'|trans }}</p>
+                    </div>
+                </li>
+
+                <li class="compare-cover__card">
+                    <a class="compare-cover__card-link"
+                       href="https://www.g2.com/products/simplybook-me/reviews"
+                       target="_blank" rel="noopener noreferrer"></a>
+                    <p class="compare-cover__card-heading p p--secondary p--small">{{ 'SimplyBook.me on'|trans }}</p>
+                    <div class="compare-cover__card-image">
+                        <img src="{{ asset('build/images/logos/g2crowd-black.svg') }}" alt="G2 Crowd logo"/>
+                    </div>
+                    <div class="compare-cover__card-info">
+                        <div class="compare-cover__card-info-title p bold">{{ 'Leader 2021'|trans }}</div>
+                        <img class="compare-cover__card-info-stars" src="{{ asset('build/images/icons/stars-row-blue.svg') }}" alt="Stars icon" />
+                        <p class="compare-cover__card-info-rating highlight bold">4.4</p>
+                        <p class="compare-cover__card-info-reviews p">>103 {{ 'reviews'|trans }}</p>
+                    </div>
+                    <div class="compare-cover__card-review">
+                        <p class="compare-cover__card-review-author p p--bold p--small">{{ 'Mark I.'|trans }}</p>
+                        <p class="compare-cover__card-review-text p p--secondary p--small">{{ '"The amount of features is great! My favourites are Payment Processing, SMTP Email, Facebook Client booking, Cal sync and Rewards and Referrals. It has so many features, but these are exactly what I was looking for in a booking system."'|trans }}</p>
+                    </div>
+                </li>
+            </ul>
+
+            <footer class="compare-cover__footer">
+                <p class="compare-cover__footer-text p">{{ 'Join tens of thousands of service businesses that trust SimplyBook.me for their appointments'|trans }}</p>
+
+                {% include '/public/static/components/partials/button.twig' with{
+                    tag: 'a',
+                    href: path('public.registration.get'),
+                    content: 'Sign up now'|trans,
+                    class: 'btn--primary compare-cover__footer-btn ',
+                    attributes: {
+                        'aria-label': 'Create your free SimplyBook.me account'|trans
+                    }
+                } %}
+            </footer>
+        </div>
+    </section>
+
+    <section class="review-party">
+        <div class="container">
+            <header class="review-party__header">
+                <h2 class="review-party__header-title title title--h2 has-subtitle">{{ 'Independent Review party'|trans }}</h2>
+                <p class="review-party__header-subtitle p p--secondary">{{ 'See how users all around the world rate SimplyBook.me compared to the other best appointment scheduling softwares.'|trans }}</p>
+            </header>
+
+            <div class="review-party__cards">
+                {% for item in review_data %}
+                    <div class="review-party__card">
+                        <div class="review-party__card-header">
+                            <h3 class="review-party__card-header-title title title--h3">{{ item.title|trans }}</h3>
+                            <div class="review-party__card-header-rating">{% if item.is_stars_based is same as(true) %}<img src="{{ asset('build/images/icons/stars-row.svg') }}" alt="Stars icon" />{% else %} <p class="p p--secondary p--small">{{ item.is_stars_based|trans }}</p> {% endif %}</div>
+                        </div>
+                        <ul class="review-party__card-list">
+                            <li class="review-party__card-item">
+                                <p class="review-party__card-item-title p p--bold">{{ item.value_1_title|trans}}</p>
+                                <p class="review-party__card-item-rate p p--bold highlight">{{ item.value_1 }}</p>
+                                <p class="review-party__card-item-reviews p p--small">({{ item.value_1_reviews }} {{ 'reviews'|trans }})</p>
+                            </li>
+                            <li class="review-party__card-item">
+                                <p class="review-party__card-item-title p p--bold">{{ item.value_2_title|trans}}</p>
+                                <p class="review-party__card-item-rate p p--bold highlight">{{ item.value_2 }}</p>
+                                <p class="review-party__card-item-reviews p p--small">({{ item.value_2_reviews }} {{ 'reviews'|trans }})</p>
+                            </li>
+                            <li class="review-party__card-item">
+                                <p class="review-party__card-item-title p p--bold">{{ item.value_3_title|trans}}</p>
+                                <p class="review-party__card-item-rate p p--bold highlight">{{ item.value_3 }}</p>
+                                <p class="review-party__card-item-reviews p p--small">({{ item.value_3_reviews }} {{ 'reviews'|trans }})</p>
+                            </li>
+                            <li class="review-party__card-item">
+                                <p class="review-party__card-item-title p p--bold">{{ item.value_4_title|trans}}</p>
+                                <p class="review-party__card-item-rate p p--bold highlight">{{ item.value_4 }}</p>
+                                <p class="review-party__card-item-reviews p p--small">({{ item.value_4_reviews }} {{ 'reviews'|trans }})</p>
+                            </li>
+                        </ul>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="compare-table compare-table--reviews">
+                <div class="compare-table__row compare-table__row--first">
+                    <div class="compare-table__column compare-table__column--first">
+                        <p class="compare-table__column-title title title--h3">{{ 'Review party'|trans }}</p>
+                    </div>
+                    <div class="compare-table__column compare-table__column--colored">
+                        <p class="compare-table__column-title p p--bold">{{ 'SimplyBook.me'|trans }}</p>
+                    </div>
+                    <div class="compare-table__column">
+                        <p class="compare-table__column-title p p--bold">{{ 'Setmore'|trans }}</p>
+                    </div>
+                    <div class="compare-table__column compare-table__column--colored">
+                        <p class="compare-table__column-title p p--bold">{{ 'Calendly'|trans }}</p>
+                    </div>
+                    <div class="compare-table__column">
+                        <p class="compare-table__column-title p p--bold">{{ 'Acuity Scheduling'|trans }}</p>
+                    </div>
+                </div>
+                {% for item in review_data %}
+                    <div class="compare-table__row">
+                        <div class="compare-table__column compare-table__column--first"><p class="p p--small">{{ item.title|trans }}</p>{% if item.is_stars_based is same as(true) %}<img src="{{ asset('build/images/icons/stars-row.svg') }}" class="compare-table__column-rating" alt="Stars row image" />{% else %}<div class="compare-table__column-rating p p--secondary p--small">{{ item.is_stars_based|trans }}</div>{% endif %}</div>
+                        <div class="compare-table__column compare-table__column--colored">
+                            <p class="compare-table__column-title p p--bold highlight">{{ item.value_1|trans }}</p>
+                            <p class="compare-table__column-title p p--small">({{ item.value_1_reviews }} {{ 'reviews'|trans }})</p>
+                        </div>
+                        <div class="compare-table__column">
+                            <p class="compare-table__column-title p p--bold highlight">{{ item.value_2|trans }}</p>
+                            <p class="compare-table__column-title p p--small">({{ item.value_2_reviews }} {{ 'reviews'|trans }})</p>
+                        </div>
+                        <div class="compare-table__column compare-table__column--colored">
+                            <p class="compare-table__column-title p p--bold highlight">{{ item.value_3|trans }}</p>
+                            <p class="compare-table__column-title p p--small">({{ item.value_3_reviews }} {{ 'reviews'|trans }})</p>
+                        </div>
+                        <div class="compare-table__column compare-table__column">
+                            <p class="compare-table__column-title p p--bold highlight">{{ item.value_4|trans }}</p>
+                            <p class="compare-table__column-title p p--small">({{ item.value_4_reviews }} {{ 'reviews'|trans }})</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {{ include('/public/static/components/support-section.html.twig', {class: 'vika-alex'}) }}
+
+    <section class="compare-questions">
+        <div class="container">
+            <header class="compare-questions__header">
+                <h2 class="compare-questions__header-title title title--h2">{{ 'Appointment Scheduling Software FAQs'|trans }}</h2>
+            </header>
+            <div class="accordion-list">
+                <script type="application/ld+json">
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "What is online scheduling?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "By implementing online scheduling, you allow your clients to book your services from your website or social media profiles whenever it suits them. So instead of having to answer phone calls or emails for booking requests, you save some time for yourself and your clients. On top of that, you make your business available 24/7 as clients just have to find you online and book from there."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What are the key benefits of an online booking system?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "The main benefit is saving you and your clients endless time trying to organise bookings. On top of that, you will reduce no shows as the booking system will send out automatic confirmations and reminders. Other advantages are asking questions upon booking, accepting deposits or full payment upon booking, offering coupons to get more business, sending come back soon reminders, and more. "
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How can I attract new customers with a booking system?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "You can run a social media campaign with a direct link to your booking website, make sure all your social media profiles include a booking link, add your business to Google business, add a booking link there, and more."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What is an appointment reminder system?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Most scheduling solutions include appointment reminders. Appointment reminders enable businesses to automatically send notifications to clients about an upcoming appointment or event. Typically, appointment reminders are sent to customers via email or SMS messages, and they have proven to reduce no-shows considerably!"
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How to accept bookings on Facebook and Instagram?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "By using a scheduling solution that has natively integrated with Facebook, you can add a \"Book now\" button to your Facebook and Instagram profiles which can help you to turn leads into customers more quickly."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What is the best scheduling app?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "That really depends on your needs. There are multiple scheduling apps on the market, and there is no one solution that is best for every business. You need to know what you want to achieve by implementing a booking system."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What is the best scheduling app for small businesses?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "What you need to do first is to figure out what you want to achieve. Do you only want a tool to schedule your meetings or do you also want to accept payments, offer different locations, sell products, offer coupons and gift cards and so on? After you have defined your needs then you can start to find the best solutions."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How do you create a booking system?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "That's easy - you just sign up for SimplyBook.me and you will get a booking website where your clients can book an appointment with you. If you already have a website then you can just add a booking widget to your website, provided by SimplyBook.me. If you need any help with setting up the specifics, contact our Live Chat and get an immediate answer 24h during the working week."
+                                }
+                            }
+                        ]
+                    }
+                </script>
+
+                <article class="accordion-card">
+                    <div class="accordion-title">{{ 'What is online scheduling?'|trans }}</div>
+                    <div class="accordion-body">
+                        <p class="p">{{ 'By implementing online scheduling, you allow your clients to book your services from your website or social media profiles whenever it suits them.  So instead of having to answer phone calls or emails for booking requests, you save some time for yourself and your clients. On top of that, you make your business available 24/7 as clients just have to find you online and book from there.'|trans }}</p>
+                    </div>
+                </article>
+                <article class="accordion-card">
+                    <div class="accordion-title">{{ 'What are the key benefits of an online booking system?'|trans }}</div>
+                    <div class="accordion-body">
+                        <p class="p">{{ 'The main benefit is saving you and your clients endless time trying to organise bookings. On top of that, you will reduce no shows as the booking system will send out automatic confirmations and reminders.  Other advantages are asking questions upon booking, accepting deposits or full payment upon booking, offering coupons to get more business, sending come back soon reminders, and more. If you are not convinced, <a href="%link%">take a look</a>! '|trans|replace({'%link%': path('benefits_scheduling_software_page')})|raw() }}</p>
+                    </div>
+                </article>
+                <article class="accordion-card">
+                    <div class="accordion-title">{{ 'How can I attract new customers with a booking system?'|trans }}</div>
+                    <div class="accordion-body">
+                        <p class="p">{{ 'You can run a social media campaign with a direct link to your booking website, make sure all your social media profiles include a booking link, add your business to Google business, add a booking link there, and more.  Read more <a href="%link%">here</a> about 9 tips to get more bookings.'|trans|replace({'%link%': 'https://news.simplybook.me/9-ways-to-get-more-bookings-on-your-business-website/'})|raw() }}</p>
+                    </div>
+                </article>
+                <article class="accordion-card">
+                    <div class="accordion-title">{{ 'What is an appointment reminder system?'|trans }}</div>
+                    <div class="accordion-body">
+                        <p class="p">{{ 'Most scheduling solutions include appointment reminders. Appointment reminders enable businesses to automatically send notifications to clients about an upcoming appointment or event. Typically, appointment reminders are sent to customers via email or SMS messages, and they have proven to reduce no-shows considerably!'|trans }}</p>
+                    </div>
+                </article>
+                <article class="accordion-card">
+                    <div class="accordion-title">{{ 'How to accept bookings on Facebook and Instagram?'|trans }}</div>
+                    <div class="accordion-body">
+                        <p class="p">{{ 'By using a scheduling solution that has natively integrated with Facebook, you can add a "Book now" button to your Facebook and Instagram profiles which can help you to turn leads into customers more quickly. <a href="%link%">Here</a> is a list of scheduling platforms that offer Facebook and Instagram bookings.'|trans|replace({'%link%': 'https://www.getapp.com/operations-management-software/scheduling/w/facebook/'})|raw() }}</p>
+                    </div>
+                </article>
+                <article class="accordion-card">
+                    <div class="accordion-title">{{ 'What is the best scheduling app?'|trans }}</div>
+                    <div class="accordion-body">
+                        <p class="p">{{ 'That really depends on your needs.  There are multiple scheduling apps on the market, and there is no one solution that is best for every business. You need to know what you want to achieve by implementing a booking system. Here come a few that are known to be outstanding for different needs:'|trans }}</p>
+                        <ul>
+                            <li>{{ 'SimplyBook.me - Very flexible with beautiful customisable booking website, offers payments, coupons, gift cards, memberships and more'|trans }}</li>
+                            <li>{{ 'SimplyMeet.me - if you only need to schedule meetings and integrate with other calendars and video platforms'|trans }}</li>
+                            <li>{{ 'HouseCallPro - For home services including estimates and more specifically designed for this industry'|trans }}</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="accordion-card">
+                    <div class="accordion-title">{{ 'What is the best scheduling app for small businesses?'|trans }}</div>
+                    <div class="accordion-body">
+                        <p class="p">{{ 'What you need to do first is to figure out what you want to achieve. Do you only want a tool to schedule your meetings or do you also want to accept payments, offer different locations, sell products, offer coupons and gift cards and so on?  After you have defined your needs then you can start to find the best solutions.  SimplyBook.me and SimplyMeet.me are two different online booking tools which cater to different needs, if you want to know more, click <a href="%link%">here</a>.'|trans|replace({'%link%' : path('sb_vs_sm_landing')})|raw() }}</p>
+                    </div>
+                </article>
+                <article class="accordion-card">
+                    <div class="accordion-title">{{ 'How do you create a booking system?'|trans }}</div>
+                    <div class="accordion-body">
+                        <p class="p">{{ 'That\'s easy - you just sign up for SimplyBook.me and you will get a booking website where your clients can book an appointment with you.  If you already have a website then you can just add a booking widget to your website, provided by SimplyBook.me.  If you need any help with setting up the specifics, contact our Live Chat and get an immediate answer 24h during the working week.'|trans }}</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+{% endif %}

@@ -1,0 +1,42 @@
+<section class="cp-platforms section">
+    <div class="container">
+        <header class="cp-platforms__header">
+            <h2 class="title title--h2">{{ 'Which Appointment Scheduling Platform Is Right for Your Business?'|trans }}</h2>
+        </header>
+
+        <div class="cp-platforms__grid">
+            <div class="cp-platforms__card cp-platforms__card--highlighted">
+                <h3 class="title title--h3">{{ 'SimplyBook.me'|trans }}</h3>
+                <p class="cp-platforms__card-label p p--bold highlight">{{ 'Best for service businesses that want to grow revenue'|trans }}</p>
+                <p class="p p--secondary">{{ 'Salons, spas, wellness studios, healthcare providers, tutors, and any business needing payment flexibility, compliance, or revenue tools like memberships and loyalty programs. The only platform here with 40+ payment gateways and HIPAA compliance below the top pricing tier.'|trans }}</p>
+                <div class="cp-platforms__card-cta">
+                    {% include '/public/static/components/partials/button.twig' with {
+                        tag: 'a',
+                        href: path('public.registration.get'),
+                        content: 'Start free'|trans,
+                        class: 'btn--primary',
+                        attributes: {'aria-label': 'Create your free SimplyBook.me account'|trans}
+                    } %}
+                </div>
+            </div>
+
+            <div class="cp-platforms__card">
+                <h3 class="title title--h3">{{ 'Calendly'|trans }}</h3>
+                <p class="cp-platforms__card-label p p--bold">{{ 'Best for sales teams and professional scheduling'|trans }}</p>
+                <p class="p p--secondary">{{ 'Sales teams, recruiters, consultants, and SaaS companies managing meeting scheduling with CRM automation. Not designed for service businesses collecting payments, managing staff, or requiring HIPAA compliance.'|trans }}</p>
+            </div>
+
+            <div class="cp-platforms__card">
+                <h3 class="title title--h3">{{ 'Setmore'|trans }}</h3>
+                <p class="cp-platforms__card-label p p--bold">{{ 'Best for solopreneurs on a tight budget'|trans }}</p>
+                <p class="p p--secondary">{{ 'Solo practitioners and very small teams needing a free or near-free solution. Strong free plan with 4 users and unlimited bookings. No native memberships, packages, gift cards, or loyalty program.'|trans }}</p>
+            </div>
+
+            <div class="cp-platforms__card">
+                <h3 class="title title--h3">{{ 'Acuity Scheduling'|trans }}</h3>
+                <p class="cp-platforms__card-label p p--bold">{{ 'Best for Squarespace users needing reliable scheduling'|trans }}</p>
+                <p class="p p--secondary">{{ 'Established service businesses in the Squarespace ecosystem needing solid scheduling and strong email marketing integrations. Unlimited bookings on all plans is a genuine advantage for high-volume businesses.'|trans }}</p>
+            </div>
+        </div>
+    </div>
+</section>

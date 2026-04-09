@@ -1,0 +1,186 @@
+<section class="cp-pricing section">
+    <div class="container">
+        <header class="cp-pricing__header">
+            <h2 class="title title--h2">{{ 'Pricing Comparison: Four Different Billing Models'|trans }}</h2>
+            <p class="p p--secondary">{{ 'The pricing models across these platforms are fundamentally different. SimplyBook.me charges by booking volume — not headcount. Calendly and Setmore charge per user. Acuity charges per calendar (staff member).'|trans }}</p>
+        </header>
+
+        <div class="cp-pricing__grid">
+
+            {# SimplyBook.me #}
+            <div class="cp-pricing__card cp-pricing__card--highlighted">
+                <h3 class="cp-pricing__card-title title title--h3">{{ 'SimplyBook.me'|trans }} <span class="p p--small p--secondary">(EUR, {{ 'per business'|trans }})</span></h3>
+                <table class="cp-pricing__table">
+                    <thead>
+                        <tr>
+                            <th>{{ 'Plan'|trans }}</th>
+                            <th>{{ 'Monthly'|trans }}</th>
+                            <th>{{ 'Annual/mo'|trans }}</th>
+                            <th>{{ 'Providers'|trans }}</th>
+                            <th>{{ 'Bookings/mo'|trans }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p--bold">{{ 'Free'|trans }}</td>
+                            <td>€0</td>
+                            <td>€0</td>
+                            <td>1</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Basic'|trans }}</td>
+                            <td>€13.90</td>
+                            <td>€11.90</td>
+                            <td>5</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Standard'|trans }}</td>
+                            <td>€29.90</td>
+                            <td>€24.90</td>
+                            <td>15</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Premium'|trans }}</td>
+                            <td>€59.90</td>
+                            <td>€49.90</td>
+                            <td>30</td>
+                            <td>2,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="cp-pricing__card-note p p--small p--secondary">{{ 'Free plan, no credit card required. 14-day free trial on paid plans.'|trans }}</p>
+            </div>
+
+            {# Calendly #}
+            <div class="cp-pricing__card">
+                <h3 class="cp-pricing__card-title title title--h3">{{ 'Calendly'|trans }} <span class="p p--small p--secondary">(USD, {{ 'per seat'|trans }})</span></h3>
+                <table class="cp-pricing__table">
+                    <thead>
+                        <tr>
+                            <th>{{ 'Plan'|trans }}</th>
+                            <th>{{ 'Monthly'|trans }}</th>
+                            <th>{{ 'Annual/mo'|trans }}</th>
+                            <th>{{ 'Key restriction'|trans }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p--bold">{{ 'Free'|trans }}</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>{{ '1 active event type only'|trans }}</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Standard'|trans }}</td>
+                            <td>$12/{{ 'seat'|trans }}</td>
+                            <td>$10/{{ 'seat'|trans }}</td>
+                            <td>{{ 'No Salesforce, no CRM routing'|trans }}</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Teams'|trans }}</td>
+                            <td>$20/{{ 'seat'|trans }}</td>
+                            <td>$16/{{ 'seat'|trans }}</td>
+                            <td>{{ 'SSO is an add-on'|trans }}</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Enterprise'|trans }}</td>
+                            <td>{{ 'Custom'|trans }}</td>
+                            <td>{{ 'From $15,000/yr'|trans }}</td>
+                            <td>{{ 'Sales call required'|trans }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="cp-pricing__card-note p p--small p--secondary">{{ 'A 20-person team on Teams plan = $320–$400/month.'|trans }}</p>
+            </div>
+
+            {# Setmore #}
+            <div class="cp-pricing__card">
+                <h3 class="cp-pricing__card-title title title--h3">{{ 'Setmore'|trans }} <span class="p p--small p--secondary">(USD, {{ 'per user'|trans }})</span></h3>
+                <table class="cp-pricing__table">
+                    <thead>
+                        <tr>
+                            <th>{{ 'Plan'|trans }}</th>
+                            <th>{{ 'Monthly'|trans }}</th>
+                            <th>{{ 'Annual/mo'|trans }}</th>
+                            <th>{{ 'Users'|trans }}</th>
+                            <th>{{ 'Bookings'|trans }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p--bold">{{ 'Free'|trans }}</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>{{ 'Up to 4'|trans }}</td>
+                            <td>{{ 'Unlimited'|trans }}</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Pro'|trans }}</td>
+                            <td>$12/{{ 'user'|trans }}</td>
+                            <td>$5/{{ 'user'|trans }}</td>
+                            <td>{{ '1–4 users'|trans }}</td>
+                            <td>{{ 'Unlimited'|trans }}</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Team'|trans }}</td>
+                            <td>$9/{{ 'user'|trans }}</td>
+                            <td>$5/{{ 'user'|trans }}</td>
+                            <td>{{ 'Unlimited'|trans }}</td>
+                            <td>{{ 'Unlimited'|trans }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="cp-pricing__card-note p p--small p--secondary">{{ 'Payments require Pro plan and above.'|trans }}</p>
+            </div>
+
+            {# Acuity Scheduling #}
+            <div class="cp-pricing__card">
+                <h3 class="cp-pricing__card-title title title--h3">{{ 'Acuity Scheduling'|trans }} <span class="p p--small p--secondary">(USD, {{ 'per business'|trans }})</span></h3>
+                <table class="cp-pricing__table">
+                    <thead>
+                        <tr>
+                            <th>{{ 'Plan'|trans }}</th>
+                            <th>{{ 'Monthly'|trans }}</th>
+                            <th>{{ 'Annual/mo'|trans }}</th>
+                            <th>{{ 'Calendars'|trans }}</th>
+                            <th>{{ 'Bookings'|trans }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p--bold">{{ 'Starter'|trans }}</td>
+                            <td>$20</td>
+                            <td>$16</td>
+                            <td>1</td>
+                            <td>{{ 'Unlimited'|trans }}</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Standard'|trans }}</td>
+                            <td>$34</td>
+                            <td>$27</td>
+                            <td>{{ 'Up to 6'|trans }}</td>
+                            <td>{{ 'Unlimited'|trans }}</td>
+                        </tr>
+                        <tr>
+                            <td class="p--bold">{{ 'Premium'|trans }}</td>
+                            <td>$61</td>
+                            <td>$49</td>
+                            <td>{{ 'Up to 36'|trans }}</td>
+                            <td>{{ 'Unlimited'|trans }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="cp-pricing__card-note p p--small p--secondary">{{ 'No free plan. 7-day free trial only.'|trans }}</p>
+            </div>
+
+        </div>
+
+        <div class="cp-pricing__summary">
+            <h3 class="title title--h3">{{ 'What the Pricing Model Means for Your Team'|trans }}</h3>
+            <p class="p p--secondary">{{ 'Consider a business with 6 staff members. On Acuity, you need the Standard plan at $27/month for 6 calendars. On Calendly Teams, 6 seats cost $96/month annually. On Setmore Pro, 6 users cost $30/month annually. On SimplyBook.me, the Standard plan at €24.90/month supports up to 15 providers — adding team members does not multiply your bill. The tradeoff: SimplyBook.me caps bookings per plan tier, while Acuity and Setmore offer unlimited bookings on paid plans.'|trans }}</p>
+        </div>
+    </div>
+</section>

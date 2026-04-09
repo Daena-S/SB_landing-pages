@@ -1,0 +1,38 @@
+<section class="cp-migrate section">
+    <div class="container">
+        <header class="cp-migrate__header">
+            <h2 class="title title--h2">{{ 'Ready to Make the Switch?'|trans }}</h2>
+            <p class="p">{{ 'Our team will handle the entire migration for you. We will import your clients, configure your services, and get your booking page live. Book a call and we will take care of the rest.'|trans }}</p>
+        </header>
+
+        <ul class="cp-migrate__features">
+            <li>
+                <i class="fas fa-check" aria-hidden="true"></i>
+                {{ 'Free migration assistance'|trans }}
+            </li>
+            <li>
+                <i class="fas fa-check" aria-hidden="true"></i>
+                {{ 'No credit card required to start'|trans }}
+            </li>
+            <li>
+                <i class="fas fa-check" aria-hidden="true"></i>
+                {{ 'Live in under 15 minutes'|trans }}
+            </li>
+        </ul>
+
+        <div class="cp-migrate__cta">
+            {% include '/public/static/components/partials/button.twig' with {
+                tag: 'a',
+                href: 'https://bigaccounts.simplybook.it/v2/?widget-type=button&theme=creative&timeline=modern&datepicker=inline_datepicker#book/category/21/count/1/provider/any/',
+                content: 'Book a Call With Our Team'|trans,
+                class: 'btn--primary',
+                attributes: {
+                    'aria-label': 'Book a migration call with SimplyBook.me team'|trans,
+                    'target': '_blank',
+                    'rel': 'noopener noreferrer'
+                }
+            } %}
+            <p class="p p--small p--secondary cp-migrate__or">{{ 'Or %link% and explore on your own.'|trans|replace({'%link%': '<a href="' ~ path('public.registration.get') ~ '">start your free plan</a>'})|raw() }}</p>
+        </div>
+    </div>
+</section>

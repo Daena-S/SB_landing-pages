@@ -1,0 +1,23 @@
+<section class="compare-cover section">
+    <div class="container">
+        <div class="compare-row compare-row__hero">
+            <section class="compare-item compare-item__content">
+                <h1 class="compare-cover__header-title title title--h1 has-subtitle">{{ '<span class="highlight">Which Appointment Scheduling Software</span> Is Right for Your Business?'|trans|raw() }}</h1>
+                <p class="p p--small p--secondary">{{ 'All data verified April 2026.'|trans }}</p>
+                <p class="compare-cover__header-subtitle p">{{ 'We compared SimplyBook.me, Calendly, Setmore, and Acuity Scheduling side by side across pricing, features, payment gateways, and compliance.'|trans }}</p>
+                <div class="cp-cover-cta">
+                    {% include '/public/static/components/partials/button.twig' with {
+                        tag: 'a',
+                        href: path('public.registration.get'),
+                        content: 'Start Free — No Credit Card Required'|trans,
+                        class: 'btn--primary',
+                        attributes: {'aria-label': 'Create your free SimplyBook.me account'|trans}
+                    } %}
+                </div>
+            </section>
+            <picture class="compare-item compare-item__picture">
+                <img width="1288" height="1028" loading="lazy" src="{{ asset('build/images/comparison-page/sb-comparison--hero.png') }}" alt="{{ 'SimplyBook.me appointment scheduling software comparison'|trans }}"/>
+            </picture>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,9 @@
+{% extends 'public/layout/main.html.twig' %}
+
+{% block title %}{% if app.request.locale in ['en'] %}{{ 'Best Appointment Scheduling Software Compared (2026) | SimplyBook.me'|trans }}{% else %}{{ 'Compare the Best Appointment Scheduling Softwares'|trans }}{% endif %}{% endblock %}
+{% block description %}{% if app.request.locale in ['en'] %}{{ 'Compare SimplyBook.me vs Calendly, Setmore, and Acuity Scheduling. Free plan, 40+ payment gateways, HIPAA from Standard plan. Find the right booking platform for your business.'|trans }}{% else %}{{ ' Compare the best appointment scheduling software and see why SimplyBook.me is an excellent option for online bookings based on independent reviews.'|trans }}{% endif %}{% endblock %}
+{% block landing_stylesheets %}{{ encore_entry_link_tags('comparison_page') }}{% endblock %}
+
+{% block body %}
+    {{ include('/public/static/comparison-page/main.html.twig') }}
+{% endblock %}
