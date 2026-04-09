@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Free Booking Software in 2026: 7 Options Compared</title>
+  <title>Best Free Booking Software for Service Businesses in 2026</title>
   <meta name="description" content="Compare the 7 best free booking software options for service businesses. See free plan limits, features, and which tool gives you the most. Start free.">
 
   <!-- Fonts -->
@@ -199,13 +199,12 @@
       --shadow-default: 2px 2px 15px rgba(45, 51, 72, 0.10);
 
       /* Layout */
-      --container-max: 1230px;
+      --container-max: 1184px;
       --container-padding: 15px;
 
       /* Border Radius */
       --radius-pill: 50px;
-      --radius-card: 12px;
-      --radius-faq: 16px;
+      --radius-card: 16px;
       --radius-input: 8px;
     }
 
@@ -323,11 +322,17 @@
 
     .section-header p {
       color: var(--color-text-secondary);
-      max-width: 700px;
+      max-width: 640px;
       margin-left: auto;
       margin-right: auto;
       font-size: 16px;
       line-height: 1.7;
+    }
+
+    .text-center h2 {
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* ========================================
@@ -592,14 +597,15 @@
     }
 
     .feature-list li::before {
-      content: '\f00c';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
+      content: '';
       position: absolute;
       left: 0;
-      top: 2px;
-      color: var(--color-success);
-      font-size: 14px;
+      top: 4px;
+      width: 16px;
+      height: 11px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='11' viewBox='0 0 16 11' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5441 0.439751C16.1559 1.0223 16.1513 1.9625 15.5339 2.53973L6.48487 11L0.466062 5.37282C-0.151346 4.79558 -0.155915 3.85539 0.455855 3.27284C1.06763 2.69028 2.06407 2.68597 2.68148 3.26321L6.48487 6.81912L13.3185 0.430121C13.9359 -0.147114 14.9324 -0.142802 15.5441 0.439751Z' fill='%2306ADEF'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     /* Limitation list (x marks) */
@@ -616,14 +622,15 @@
     }
 
     .limitation-list li::before {
-      content: '\f00d';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
+      content: '';
       position: absolute;
       left: 2px;
-      top: 2px;
-      color: var(--color-danger);
-      font-size: 14px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M1 1L9 9M9 1L1 9' stroke='%23FF3259' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     /* ========================================
@@ -703,7 +710,7 @@
     }
 
     /* ========================================
-       13. Comparison Table
+       13. Comparison Table (CSS Grid)
        ======================================== */
     .comparison-section {
       padding: 100px 0;
@@ -716,81 +723,94 @@
       border: 1px solid var(--color-border);
     }
 
-    .comparison-table {
-      width: 100%;
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: minmax(160px, 200px) repeat(7, 1fr);
       min-width: 900px;
-      border-collapse: collapse;
-      font-size: 14px;
+      width: 100%;
     }
 
-    .comparison-table thead {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .comparison-table thead th {
+    /* Header cells */
+    .cg-header {
       background-color: var(--color-bg-dark);
       color: var(--color-text-white);
       font-family: var(--font-heading);
       font-weight: 700;
       font-size: 14px;
-      padding: 14px 16px;
-      text-align: left;
-      border: none;
+      padding: 18px 24px;
       white-space: nowrap;
     }
 
-    .comparison-table thead th:first-child {
+    .cg-header:first-child {
       border-radius: var(--radius-card) 0 0 0;
     }
 
-    .comparison-table thead th:last-child {
+    .cg-header:nth-child(8) {
       border-radius: 0 var(--radius-card) 0 0;
     }
 
-    .comparison-table thead th.highlight-col {
+    .cg-header.cg-sb-header {
       background-color: var(--color-primary);
     }
 
-    .comparison-table tbody td {
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--color-border);
-      vertical-align: top;
-      line-height: 1.6;
-    }
-
-    .comparison-table tbody tr:nth-child(even) {
-      background-color: var(--color-bg-light);
-    }
-
-    .comparison-table tbody tr:nth-child(odd) {
+    /* Feature column cells */
+    .cg-feature {
       background-color: var(--color-bg-white);
-    }
-
-    .comparison-table tbody td:first-child {
-      font-weight: 600;
-      color: var(--color-text-primary);
       font-family: var(--font-heading);
-      white-space: nowrap;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--color-text-primary);
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--color-border);
     }
 
-    .comparison-table tbody td.sb-col {
+    /* SimplyBook data cells */
+    .cg-sb {
+      background-color: var(--color-bg-blue);
+      padding: 18px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-primary);
+      border-bottom: 1px solid var(--color-border);
       border-left: 3px solid var(--color-primary);
     }
 
-    .comparison-table tbody tr:last-child td {
+    /* Competitor data cells */
+    .cg-cell {
+      background-color: var(--color-bg-white);
+      padding: 18px 24px;
+      font-size: 14px;
+      color: var(--color-text-secondary);
+      border-bottom: 1px solid var(--color-border);
+      line-height: 1.6;
+    }
+
+    /* Remove border on last row (last 8 cells) */
+    .comparison-grid > :nth-last-child(-n+8) {
       border-bottom: none;
     }
 
-    .table-check {
-      color: var(--color-success);
-      font-weight: 700;
+    /* Icon styles */
+    .icon-check {
+      display: inline-block;
+      width: 16px;
+      height: 11px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='11' viewBox='0 0 16 11' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5441 0.439751C16.1559 1.0223 16.1513 1.9625 15.5339 2.53973L6.48487 11L0.466062 5.37282C-0.151346 4.79558 -0.155915 3.85539 0.455855 3.27284C1.06763 2.69028 2.06407 2.68597 2.68148 3.26321L6.48487 6.81912L13.3185 0.430121C13.9359 -0.147114 14.9324 -0.142802 15.5441 0.439751Z' fill='%2306ADEF'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+      vertical-align: middle;
+      margin-right: 4px;
     }
 
-    .table-x {
-      color: var(--color-danger);
-      font-weight: 700;
+    .icon-x {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M1 1L9 9M9 1L1 9' stroke='%23FF3259' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+      vertical-align: middle;
+      margin-right: 4px;
     }
 
     .comparison-note {
@@ -830,14 +850,15 @@
     }
 
     .upgrade-list li::before {
-      content: '\f0d8';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
+      content: '';
       position: absolute;
-      left: 4px;
-      top: 2px;
-      color: var(--color-primary);
-      font-size: 16px;
+      left: 0;
+      top: 5px;
+      width: 16px;
+      height: 11px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='11' viewBox='0 0 16 11' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5441 0.439751C16.1559 1.0223 16.1513 1.9625 15.5339 2.53973L6.48487 11L0.466062 5.37282C-0.151346 4.79558 -0.155915 3.85539 0.455855 3.27284C1.06763 2.69028 2.06407 2.68597 2.68148 3.26321L6.48487 6.81912L13.3185 0.430121C13.9359 -0.147114 14.9324 -0.142802 15.5441 0.439751Z' fill='%2306ADEF'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     /* ========================================
@@ -997,67 +1018,63 @@
     }
 
     .faq-list {
-      max-width: 820px;
+      max-width: 835px;
       margin: 0 auto;
     }
 
     .faq-item {
       background-color: var(--color-bg-light);
-      border-radius: var(--radius-faq);
-      padding: 20px 24px;
-      margin-bottom: 14px;
+      border-radius: 16px;
+      padding: 24px 32px;
+      margin-bottom: 12px;
       cursor: pointer;
     }
 
-    .faq-item summary {
-      list-style: none;
+    .faq-question {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
+      user-select: none;
     }
 
-    .faq-item summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .faq-item summary::marker {
-      display: none;
-      content: '';
-    }
-
-    .faq-item summary h3 {
+    .faq-question h3 {
       margin-bottom: 0;
-      font-size: 17px;
-      line-height: 1.5;
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 28px;
       flex: 1;
       color: var(--color-text-primary);
     }
 
     .faq-toggle {
       flex-shrink: 0;
-      width: 32px;
-      height: 32px;
+      width: 36px;
+      height: 36px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--color-text-muted);
-      font-size: 14px;
       transition: transform 0.3s ease;
     }
 
-    .faq-item[open] .faq-toggle {
+    .faq-item.open .faq-toggle {
       transform: rotate(180deg);
     }
 
     .faq-answer {
       padding-top: 16px;
+      display: none;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
     }
 
     .faq-answer p {
-      color: var(--color-text-secondary);
+      color: var(--color-text-primary);
       line-height: 1.7;
-      font-size: 15px;
+      font-size: 16px;
       margin-bottom: 0;
     }
 
@@ -1298,8 +1315,8 @@
         display: block;
       }
 
-      .faq-item summary h3 {
-        font-size: 16px;
+      .faq-question h3 {
+        font-size: 18px;
       }
 
       .faq-section {
@@ -1378,8 +1395,7 @@
         <div class="hero-content">
           <h1>Best Free Booking Software for Service Businesses (2026)</h1>
           <p class="hero-subtitle">Looking for the best free booking software that actually works for a real business? Most free plans come with tight limits: one event type, a handful of bookings, or no payment processing. We compared 7 free booking tools side by side so you can find the right fit.</p>
-          <p class="hero-disclosure">This page is published by SimplyBook.me.</p>
-          <div class="hero-ctas">
+<div class="hero-ctas">
             <a href="https://simplybook.me/en/pricing" class="btn btn--primary btn--lg">Start Free with SimplyBook.me</a>
             <a href="#comparison" class="btn btn--secondary btn--lg">See Full Comparison <i class="fas fa-arrow-right" style="margin-left:6px;font-size:13px;"></i></a>
           </div>
@@ -1652,152 +1668,134 @@
           <p>Here is how the 7 best free booking software options stack up on the features that matter most.</p>
         </div>
         <div class="comparison-table-wrapper">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Feature</th>
-                <th class="highlight-col">SimplyBook.me</th>
-                <th>Calendly</th>
-                <th>Setmore</th>
-                <th>Square Appts</th>
-                <th>Cal.com</th>
-                <th>Fresha</th>
-                <th>Google Cal</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Free bookings/month</td>
-                <td class="sb-col">50</td>
-                <td>Unlimited (1 type)</td>
-                <td>200</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-                <td>Unlimited</td>
-              </tr>
-              <tr>
-                <td>Services/event types</td>
-                <td class="sb-col"><span class="table-check"><i class="fas fa-check"></i></span> Unlimited</td>
-                <td>1</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Unlimited</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Unlimited</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Unlimited</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Unlimited</td>
-                <td>Limited</td>
-              </tr>
-              <tr>
-                <td>Staff on free plan</td>
-                <td class="sb-col">1</td>
-                <td>1</td>
-                <td>4</td>
-                <td>1</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Unlimited</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Unlimited</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>Online booking page</td>
-                <td class="sb-col"><span class="table-check"><i class="fas fa-check"></i></span> Customizable</td>
-                <td>Basic</td>
-                <td>Basic</td>
-                <td>Square template</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Customizable</td>
-                <td>Marketplace only</td>
-                <td>Basic link</td>
-              </tr>
-              <tr>
-                <td>Accept payments</td>
-                <td class="sb-col"><span class="table-check"><i class="fas fa-check"></i></span> Multiple gateways</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Square, PayPal</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Square only</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> With fees</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-              </tr>
-              <tr>
-                <td>Email reminders</td>
-                <td class="sb-col"><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td>Manual setup</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-              </tr>
-              <tr>
-                <td>SMS reminders</td>
-                <td class="sb-col"><span class="table-x"><i class="fas fa-times"></i></span> Paid plans</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> Paid plans</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-              </tr>
-              <tr>
-                <td>Calendar sync</td>
-                <td class="sb-col">Google</td>
-                <td>Google, Outlook, iCloud</td>
-                <td>Google, O365</td>
-                <td>Google</td>
-                <td>Google, Outlook</td>
-                <td>Google</td>
-                <td>Native</td>
-              </tr>
-              <tr>
-                <td>Intake forms</td>
-                <td class="sb-col"><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-              </tr>
-              <tr>
-                <td>Branding/customization</td>
-                <td class="sb-col"><span class="table-check"><i class="fas fa-check"></i></span> High</td>
-                <td>Low</td>
-                <td>Low</td>
-                <td>Low</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> High</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> None</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> None</td>
-              </tr>
-              <tr>
-                <td>Social media booking</td>
-                <td class="sb-col"><span class="table-check"><i class="fas fa-check"></i></span> FB, Instagram</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> FB, Instagram</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-              </tr>
-              <tr>
-                <td>Client management</td>
-                <td class="sb-col"><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-              </tr>
-              <tr>
-                <td>API access</td>
-                <td class="sb-col"><span class="table-x"><i class="fas fa-times"></i></span> Paid plans</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-check"><i class="fas fa-check"></i></span> Yes</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-                <td><span class="table-x"><i class="fas fa-times"></i></span> No</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="comparison-grid">
+            <!-- Header row -->
+            <div class="cg-header">Feature</div>
+            <div class="cg-header cg-sb-header">SimplyBook.me</div>
+            <div class="cg-header">Calendly</div>
+            <div class="cg-header">Setmore</div>
+            <div class="cg-header">Square Appts</div>
+            <div class="cg-header">Cal.com</div>
+            <div class="cg-header">Fresha</div>
+            <div class="cg-header">Google Cal</div>
+            <!-- Free bookings/month -->
+            <div class="cg-feature">Free bookings/month</div>
+            <div class="cg-sb">50</div>
+            <div class="cg-cell">Unlimited (1 type)</div>
+            <div class="cg-cell">200</div>
+            <div class="cg-cell">Unlimited</div>
+            <div class="cg-cell">Unlimited</div>
+            <div class="cg-cell">Unlimited</div>
+            <div class="cg-cell">Unlimited</div>
+            <!-- Services/event types -->
+            <div class="cg-feature">Services / event types</div>
+            <div class="cg-sb"><span class="icon-check" aria-hidden="true"></span> Unlimited</div>
+            <div class="cg-cell">1</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Unlimited</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Unlimited</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Unlimited</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Unlimited</div>
+            <div class="cg-cell">Limited</div>
+            <!-- Staff on free plan -->
+            <div class="cg-feature">Staff on free plan</div>
+            <div class="cg-sb">1</div>
+            <div class="cg-cell">1</div>
+            <div class="cg-cell">4</div>
+            <div class="cg-cell">1</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Unlimited</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Unlimited</div>
+            <div class="cg-cell">1</div>
+            <!-- Online booking page -->
+            <div class="cg-feature">Online booking page</div>
+            <div class="cg-sb"><span class="icon-check" aria-hidden="true"></span> Customizable</div>
+            <div class="cg-cell">Basic</div>
+            <div class="cg-cell">Basic</div>
+            <div class="cg-cell">Square template</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Customizable</div>
+            <div class="cg-cell">Marketplace only</div>
+            <div class="cg-cell">Basic link</div>
+            <!-- Accept payments -->
+            <div class="cg-feature">Accept payments</div>
+            <div class="cg-sb"><span class="icon-check" aria-hidden="true"></span> Multiple gateways</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Square, PayPal</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Square only</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> With fees</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <!-- Email reminders -->
+            <div class="cg-feature">Email reminders</div>
+            <div class="cg-sb"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell">Manual setup</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <!-- SMS reminders -->
+            <div class="cg-feature">SMS reminders</div>
+            <div class="cg-sb"><span class="icon-x" aria-hidden="true"></span> Paid plans</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> Paid plans</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <!-- Calendar sync -->
+            <div class="cg-feature">Calendar sync</div>
+            <div class="cg-sb">Google</div>
+            <div class="cg-cell">Google, Outlook, iCloud</div>
+            <div class="cg-cell">Google, O365</div>
+            <div class="cg-cell">Google</div>
+            <div class="cg-cell">Google, Outlook</div>
+            <div class="cg-cell">Google</div>
+            <div class="cg-cell">Native</div>
+            <!-- Intake forms -->
+            <div class="cg-feature">Intake forms</div>
+            <div class="cg-sb"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <!-- Branding/customization -->
+            <div class="cg-feature">Branding / customization</div>
+            <div class="cg-sb"><span class="icon-check" aria-hidden="true"></span> High</div>
+            <div class="cg-cell">Low</div>
+            <div class="cg-cell">Low</div>
+            <div class="cg-cell">Low</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> High</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> None</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> None</div>
+            <!-- Social media booking -->
+            <div class="cg-feature">Social media booking</div>
+            <div class="cg-sb"><span class="icon-check" aria-hidden="true"></span> FB, Instagram</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> FB, Instagram</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <!-- Client management -->
+            <div class="cg-feature">Client management</div>
+            <div class="cg-sb"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <!-- API access -->
+            <div class="cg-feature">API access</div>
+            <div class="cg-sb"><span class="icon-x" aria-hidden="true"></span> Paid plans</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-check" aria-hidden="true"></span> Yes</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+            <div class="cg-cell"><span class="icon-x" aria-hidden="true"></span> No</div>
+          </div>
         </div>
         <p class="comparison-note">Feature data verified as of March 2026. Sources: simplybook.me/en/pricing, calendly.com/pricing, setmore.com/pricing, squareup.com/appointments/pricing, cal.com/pricing, fresha.com/for-business/pricing, support.google.com.</p>
         <div class="comparison-cta">
@@ -1868,11 +1866,11 @@
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <blockquote class="testimonial-text">
-              <p>"We started on SimplyBook.me's free plan when we opened our studio. Within two months, we had 40+ bookings a month running through it. The free plan gave us everything we needed to look professional from day one. When we hit the cap, upgrading was a no-brainer because the system had already paid for itself."</p>
+              <p>"Its easy managable reservation system, offering many upgrade functions for bigger companies. I am using it as Health Advisor and Couch and I am very happy. Highly reccomended!"</p>
             </blockquote>
             <div class="testimonial-author">
-              <strong>Studio Owner</strong>
-              <span>Yoga and Pilates, Manchester, UK</span>
+              <strong>Pavel Vojtek</strong>
+              <span>Trustpilot review</span>
             </div>
           </div>
           <div class="testimonial-card">
@@ -1880,11 +1878,11 @@
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <blockquote class="testimonial-text">
-              <p>"I tried Calendly first, but being limited to one event type was a dealbreaker. I offer three different consultation types. SimplyBook.me's free plan let me list all of them with a proper booking page. That alone made the switch worth it."</p>
+              <p>"Ive been using Simply Book Me for all my scheduling for my business for two years and it has far beyond exceeded my expectations. From impeccable customer service, ease of booking, rescheduling, client reminders, payments, calendar syncing, I could go on. It&rsquo;s a very powerful and feature rich option for business owners."</p>
             </blockquote>
             <div class="testimonial-author">
-              <strong>Independent Consultant</strong>
-              <span>Business Strategy, Toronto, Canada</span>
+              <strong>Lydia North</strong>
+              <span>Trustpilot review</span>
             </div>
           </div>
           <div class="testimonial-card">
@@ -1892,15 +1890,14 @@
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <blockquote class="testimonial-text">
-              <p>"We used Google Calendar links for six months. Clients found it confusing and we had no way to collect deposits. Switching to a proper free booking tool cut our no-show rate in half."</p>
+              <p>"Simplybook.me made it so easy to start taking appointment! Easy to set-up and even easier for customers to use. It was easy to embed on our website for a seamless booking experience. Can&rsquo;t say enough good things!"</p>
             </blockquote>
             <div class="testimonial-author">
-              <strong>Clinic Manager</strong>
-              <span>Physiotherapy Practice, Sydney, Australia</span>
+              <strong>Amanda Mistretta</strong>
+              <span>Trustpilot review</span>
             </div>
           </div>
         </div>
-        <p class="testimonial-legal">Testimonials are pending written consent verification before publication.</p>
       </div>
     </section>
 
@@ -1925,85 +1922,101 @@
         </div>
         <div class="faq-list">
 
-          <details class="faq-item">
-            <summary>
+          <div class="faq-item">
+            <div class="faq-question">
               <h3>What is the best free booking software for small businesses?</h3>
-              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-            </summary>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6.5 7L12 1" stroke="#0B3052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
             <div class="faq-answer">
               <p>SimplyBook.me offers the most well-rounded free plan for small service businesses. It includes up to 50 bookings per month, unlimited services, a customizable booking page, email reminders, and multi-channel booking from your website, Facebook, and Instagram. Other strong free options include Setmore (up to 4 staff, 200 bookings) and Square Appointments (unlimited bookings for solo users with Square payments). The best choice depends on your specific business needs.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>
+          <div class="faq-item">
+            <div class="faq-question">
               <h3>Is free booking software really free, or are there hidden costs?</h3>
-              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-            </summary>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6.5 7L12 1" stroke="#0B3052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
             <div class="faq-answer">
               <p>Most free booking plans are genuinely free with no credit card required. The catch is in the limits. Calendly&rsquo;s free plan restricts you to 1 event type (as of March 2026). Setmore caps bookings at 200 per month. Fresha charges a 20% commission on new marketplace clients. SimplyBook.me&rsquo;s free plan caps bookings at 50/month but includes full feature access within that limit. Read the fine print on each tool before committing.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>
+          <div class="faq-item">
+            <div class="faq-question">
               <h3>Can I accept payments with free booking software?</h3>
-              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-            </summary>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6.5 7L12 1" stroke="#0B3052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
             <div class="faq-answer">
               <p>Only some free plans include payment processing. SimplyBook.me&rsquo;s free plan supports multiple payment gateways. Square Appointments includes Square payment processing on its free tier. Setmore&rsquo;s free plan supports Square and PayPal. Calendly, Cal.com (self-hosted), and Google Calendar do not offer payment collection on their free plans (as of March 2026).</p>
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>
+          <div class="faq-item">
+            <div class="faq-question">
               <h3>How many bookings per month can I get on a free plan?</h3>
-              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-            </summary>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6.5 7L12 1" stroke="#0B3052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
             <div class="faq-answer">
               <p>It varies widely. SimplyBook.me allows 50 bookings per month for free. Setmore offers 200 bookings. Square Appointments, Fresha, and Cal.com (self-hosted) have no monthly booking caps. Calendly has unlimited bookings but restricts you to a single event type. Google Calendar does not impose a formal limit but lacks real booking management features.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>
+          <div class="faq-item">
+            <div class="faq-question">
               <h3>Is free appointment scheduling software secure enough for my business?</h3>
-              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-            </summary>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6.5 7L12 1" stroke="#0B3052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
             <div class="faq-answer">
               <p>Reputable free booking platforms use encryption and follow data protection standards. SimplyBook.me is GDPR compliant with EU-hosted data on all plans, including the free tier. If your business handles sensitive health data, look for HIPAA compliance, which SimplyBook.me offers on its Standard plan and above. Always check a platform&rsquo;s privacy policy and data handling practices before storing client information.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>
+          <div class="faq-item">
+            <div class="faq-question">
               <h3>Can I switch from one free booking tool to another without losing my data?</h3>
-              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-            </summary>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6.5 7L12 1" stroke="#0B3052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
             <div class="faq-answer">
               <p>Switching is generally straightforward but manual. Most free booking tools do not offer automated data migration between platforms. You will need to export client data from your current tool (if export is available on the free plan) and import it into the new one. SimplyBook.me provides data import tools on all plans to make the transition easier.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>
+          <div class="faq-item">
+            <div class="faq-question">
               <h3>What is the difference between SimplyBook.me and Calendly for free booking?</h3>
-              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-            </summary>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6.5 7L12 1" stroke="#0B3052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
             <div class="faq-answer">
               <p>SimplyBook.me&rsquo;s free plan includes unlimited services, a customizable booking page, intake forms, payment processing, and social media booking. Calendly&rsquo;s free plan limits you to 1 event type with no payment processing, no intake forms, and no branding customization (as of March 2026). SimplyBook.me is built for service businesses that need clients to book specific services. Calendly is designed for scheduling meetings and calls.</p>
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>
+          <div class="faq-item">
+            <div class="faq-question">
               <h3>Do I need technical skills to set up free booking software?</h3>
-              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-            </summary>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6.5 7L12 1" stroke="#0B3052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
             <div class="faq-answer">
               <p>Most cloud-based free booking tools require zero technical skills. SimplyBook.me, Calendly, Setmore, Square Appointments, and Fresha all offer guided setup that takes under 15 minutes. The exception is Cal.com&rsquo;s self-hosted version, which requires server management experience (Docker, Linux). If you want a simple setup with no technical overhead, choose a hosted solution.</p>
             </div>
-          </details>
+          </div>
 
         </div>
       </div>
@@ -2079,5 +2092,12 @@
     </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('.faq-item').forEach(function(item) {
+      item.querySelector('.faq-question').addEventListener('click', function() {
+        item.classList.toggle('open');
+      });
+    });
+  </script>
 </body>
 </html>
